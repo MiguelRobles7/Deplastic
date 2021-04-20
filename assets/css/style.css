@@ -1099,7 +1099,17 @@ a.navbar-brand.our_logo {
   color: black;
   font-size: 0.9rem;
 }
-
+.navbar-logo {
+  width: auto;
+  height: 30px;
+  margin-top: -10px;
+  padding-right: 10px;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
 /* REMOVED
 .footer {
   position: absolute;
