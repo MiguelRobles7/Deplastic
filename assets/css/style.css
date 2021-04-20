@@ -10,7 +10,6 @@ body {
   font-family: "roboto", sans-serif;
   font-weight: 300;
 }
-
 /*==========================================
 PRE LOADER 
 ==========================================*/
@@ -632,9 +631,28 @@ a.navbar-brand.our_logo {
 
 /* slider section */
 
-.slider {
-  background: url(../images/bannerbg.jpg) center center no-repeat;
+.background {
+  background: url(../images/Group26.png) center center no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 1980px;
+}
+@media only screen and (min-device-width: 700px) {
+  .background {
+    background: url(../images/Group26.png) center center no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 1980px;
+  }
+}
+/* Won't really support wide monitors */
+@media only screen and (min-device-width: 2000px) {
+  .background {
+    background: url(../images/Group26.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 3000px;
+  }
 }
 .main_slider {
 }
