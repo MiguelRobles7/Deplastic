@@ -14,6 +14,16 @@ body {
 PRE LOADER 
 ==========================================*/
 
+@font-face {
+  font-family: Agrandir;
+  src: url('../fonts/AGrandir/Agrandir\ Wide\ -\ Bold.ttf');
+}
+
+@font-face {
+  font-family: Mattsolar;
+  src: url('../fonts/Mattsolar-2Oj28.ttf');
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -993,3 +1003,104 @@ a.navbar-brand.our_logo {
   margin-left: -6px;
   text-decoration: none;
 }
+
+
+/* NAVBAR */
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+  color:white;
+  font-family: Agrandir;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: 0.4s;
+  font-size: 0.7rem;
+}
+
+.nav-link:hover {
+  color: white !important;
+  opacity: 0.7 !important;
+}
+
+.navbar {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+  color: white;
+}
+
+.timeline-btn {
+  background: linear-gradient(#B35FFF, #CB49F9);
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+
+/* BANNER */
+.banner-wrapper {
+  padding-top: 220px;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+}
+
+.details .header {
+  line-height: 1;
+  font-size: 2.7rem;
+  color: white;
+  font-family: Agrandir; 
+}
+
+.details .header span {
+  background: -webkit-linear-gradient(#23FFCA, #CB49F9);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.more-details {
+  margin-bottom: 25px;
+  color: #BCD9D7;
+  padding-right: 200px;
+  font-size: 1.3rem;
+  line-height: 0.9;
+}
+
+.battlecry {
+  line-height: 0.7;
+  text-align: center;
+  color: white;
+  font-family: Mattsolar;
+  font-size: 13rem;
+  transform: rotate(-8deg);
+}
+
+.battlecry-head {
+  color: #BCD9D7;
+}
+
+.learn-more-btn {
+  background: linear-gradient(#FFFFFF, #CBCBCB);
+  padding: 7px 30px;
+  border-radius: 7px;
+  font-family: Agrandir;
+  color: black;
+  font-size: 0.9rem;
+}
+
+/* REMOVED
+.footer {
+  position: absolute;
+  bottom: 0; right: 0; left: 0;
+}
+
+.slogan-container {
+  margin-top: 220px;
+}
+*/
