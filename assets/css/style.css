@@ -1110,6 +1110,15 @@ a.navbar-brand.our_logo {
   -ms-transform: rotate(20deg);
   transform: rotate(20deg);
 }
+
+/* SOURCES */
+.sources-wrapper {
+  padding-top: 1350px;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+}
+
 /* REMOVED
 .footer {
   position: absolute;
