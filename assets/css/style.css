@@ -16,9 +16,17 @@ PRE LOADER
 
 @font-face {
   font-family: Agrandir;
-  src: url("../fonts/Agrandir_Wide_Bold.ttf");
+  src: url("../fonts/Agrandir_Normal_Bold.ttf");
 }
 
+@font-face {
+  font-family: AgrandirRegular;
+  src: url("../fonts/Agrandir_Normal_Regular.ttf");
+}
+@font-face {
+  font-family: AgrandirWide;
+  src: url("../fonts/Agrandir_Wide_Bold.ttf");
+}
 @font-face {
   font-family: Mattsolar;
   src: url("../fonts/Mattsolar-2Oj28.ttf");
@@ -1059,7 +1067,13 @@ a.navbar-brand.our_logo {
   color: white;
   font-family: Agrandir;
 }
-
+.banner-header {
+  line-height: 1;
+  font-size: 3.5rem;
+  color: white;
+  font-family: Agrandir;
+  margin-bottom: 10px;
+}
 .details .header span {
   background: -webkit-linear-gradient(#9187e9, #cb49f9);
   -webkit-background-clip: text;
@@ -1069,11 +1083,21 @@ a.navbar-brand.our_logo {
 .more-details {
   margin-bottom: 25px;
   color: #bcd9d7;
-  padding-right: 200px;
+  padding-right: 140px;
   font-size: 1.3rem;
-  line-height: 0.9;
+  line-height: 1.1;
+  margin-left: 4px;
 }
-
+.sources-details {
+  padding-top: 35px;
+  margin-bottom: 30px;
+  color: #bcd9d7;
+  font-size: 1.1rem;
+  line-height: 0.9;
+  margin-left: 100px;
+  text-align: justify;
+  font-family: AgrandirRegular;
+}
 .battlecry {
   line-height: 0.7;
   text-align: center;
@@ -1092,11 +1116,12 @@ a.navbar-brand.our_logo {
 
 .learn-more-btn {
   background: linear-gradient(#ffffff, #cbcbcb);
-  padding: 7px 30px;
+  padding: 10px 35px;
   border-radius: 7px;
   font-family: Agrandir;
   color: black;
   font-size: 0.9rem;
+  letter-spacing: 2px;
 }
 .navbar-logo {
   width: auto;
