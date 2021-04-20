@@ -24,6 +24,11 @@ PRE LOADER
   src: url('../fonts/Mattsolar-2Oj28.ttf');
 }
 
+@font-face {
+  font-family: Atyp;
+  src: url('../fonts/AtypDisplay-Bold.ttf')
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -1059,7 +1064,7 @@ a.navbar-brand.our_logo {
 }
 
 .details .header span {
-  background: -webkit-linear-gradient(#23FFCA, #CB49F9);
+  background: -webkit-linear-gradient(#9187e9, #CB49F9);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1083,6 +1088,9 @@ a.navbar-brand.our_logo {
 
 .battlecry-head {
   color: #BCD9D7;
+  font-family: Atyp;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
 }
 
 .learn-more-btn {
