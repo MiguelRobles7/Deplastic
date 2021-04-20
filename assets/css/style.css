@@ -16,17 +16,17 @@ PRE LOADER
 
 @font-face {
   font-family: Agrandir;
-  src: url('../fonts/AGrandir/Agrandir\ Wide\ -\ Bold.ttf');
+  src: url("../fonts/Agrandir_Wide_Bold.ttf");
 }
 
 @font-face {
   font-family: Mattsolar;
-  src: url('../fonts/Mattsolar-2Oj28.ttf');
+  src: url("../fonts/Mattsolar-2Oj28.ttf");
 }
 
 @font-face {
   font-family: Atyp;
-  src: url('../fonts/AtypDisplay-Bold.ttf')
+  src: url("../fonts/AtypDisplay-Bold.ttf");
 }
 
 .preloader {
@@ -1009,11 +1009,10 @@ a.navbar-brand.our_logo {
   text-decoration: none;
 }
 
-
 /* NAVBAR */
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-  color:white;
+  color: white;
   font-family: Agrandir;
 }
 
@@ -1042,11 +1041,10 @@ a.navbar-brand.our_logo {
 }
 
 .timeline-btn {
-  background: linear-gradient(#B35FFF, #CB49F9);
+  background: linear-gradient(#b35fff, #cb49f9);
   border-radius: 5px;
   margin-left: 15px;
 }
-
 
 /* BANNER */
 .banner-wrapper {
@@ -1060,18 +1058,18 @@ a.navbar-brand.our_logo {
   line-height: 1;
   font-size: 2.7rem;
   color: white;
-  font-family: Agrandir; 
+  font-family: Agrandir;
 }
 
 .details .header span {
-  background: -webkit-linear-gradient(#9187e9, #CB49F9);
+  background: -webkit-linear-gradient(#9187e9, #cb49f9);
   -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .more-details {
   margin-bottom: 25px;
-  color: #BCD9D7;
+  color: #bcd9d7;
   padding-right: 200px;
   font-size: 1.3rem;
   line-height: 0.9;
@@ -1087,14 +1085,14 @@ a.navbar-brand.our_logo {
 }
 
 .battlecry-head {
-  color: #BCD9D7;
+  color: #bcd9d7;
   font-family: Atyp;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
 
 .learn-more-btn {
-  background: linear-gradient(#FFFFFF, #CBCBCB);
+  background: linear-gradient(#ffffff, #cbcbcb);
   padding: 7px 30px;
   border-radius: 7px;
   font-family: Agrandir;
