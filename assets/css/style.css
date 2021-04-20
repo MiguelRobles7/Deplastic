@@ -1048,12 +1048,11 @@ a.navbar-brand.our_logo {
 
 /* BANNER */
 .banner-wrapper {
-  padding-top: 220px;
+  margin-top: 220px;
   height: 500px;
   width: 100%;
   position: absolute;
 }
-
 .details .header {
   line-height: 1;
   font-size: 2.7rem;
@@ -1113,12 +1112,25 @@ a.navbar-brand.our_logo {
 
 /* SOURCES */
 .sources-wrapper {
-  padding-top: 1350px;
+  margin-top: 1350px;
   height: 500px;
   width: 100%;
   position: absolute;
 }
-
+.facts-wrapper {
+  margin-top: 870px;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+}
+.facts-details {
+  margin-bottom: 25px;
+  color: #bcd9d7;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: justify;
+  letter-spacing: 0.8px;
+}
 /* REMOVED
 .footer {
   position: absolute;
