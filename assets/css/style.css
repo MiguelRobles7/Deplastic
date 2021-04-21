@@ -1021,6 +1021,15 @@ a.navbar-brand.our_logo {
   padding: 0px 30px 0px 30px;
 }
 
+.col-md-3.col-sm-6.col-xs-12.segment-three h4 {
+  font-family: Agrandir;
+  font-size: 1.3em;
+}
+
+.col-md-3.col-sm-6.col-xs-12.segment-three a {
+  color: #cb49f9;
+}
+
 .col-md-3.col-sm-6.col-xs-12.segment-four {
   text-align: justify;
   padding: 0 40px 0 40px;
