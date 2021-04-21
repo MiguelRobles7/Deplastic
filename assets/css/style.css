@@ -1127,7 +1127,7 @@ a.navbar-brand.our_logo {
   padding-top: 2px;
   padding-bottom: 2px;
   transition: 0.4s;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -1297,6 +1297,44 @@ a.navbar-brand.our_logo {
   width: 95%;
 }
 
+/* SCROLL */
+.scroll-wrapper {
+  top: 25%;
+  left: 12%;
+  position: fixed;
+}
+
+.scroll-group {
+  display: flexbox;
+  flex-direction: column;
+}
+
+.scroll-btn {
+  margin-top: 25px;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px 0 #bcd9d7, 0 1px 6px 0 #bcd9d7;
+}
+
+#section1 {
+  margin-top: 0;
+  position: absolute;
+}
+
+#section2 {
+  margin-top: 650px;
+  position: absolute;
+}
+
+#section3 {
+  margin-top: 1130px;
+  position: absolute;
+}
+
+#section4 {
+  margin-top: 0;
+  position: absolute;
+}
+
 @media only screen and (max-device-width: 960px) {
   .banner-wrapper {
     margin-top: 100px;
@@ -1310,6 +1348,10 @@ a.navbar-brand.our_logo {
   .navbar {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .scroll-wrapper {
+    visibility: hidden;
   }
 }
 
@@ -1433,6 +1475,7 @@ a.navbar-brand.our_logo {
     padding: 0;
   }
 }
+
 /* Won't really support wide monitors */
 @media only screen and (min-device-width: 2000px) {
   .background {
