@@ -94,16 +94,16 @@
                   <span>and why it is harmful.</span>
                 </div>
                 <div class="row col-sm-12">
-                  <div class="facts-details col-sm-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisci. Malesuada quis suspendisse ipsum mattis mattis eget a sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisci.
-                  </div>
-                  <div class="facts-details col-sm-6">
-                    Lorem ipsum dolor sit amet, consectetur adipisci. Malesuada quis suspendisse ipsum mattis mattis eget a sit.
-                    Lorem ipsum dolor sit amet, consectetur adipisci.
-                  </div>
+                  <p id="facts1" class="facts-details col-sm-12">
+                    Since the 1950s, around 8.3 billion tons of plastic have been produced worldwide.
+                    <br />
+                    <br />
+                    According to a report from the Guardian, an estimated 8.3 billion tons of plastic have been produced since the
+                    1950s — that’s equivalent to the weight of more than 800,000 Eiffel Towers.
+                    <br /><br /><br />
+                    And only 9% of it has been recycled.
+                  </p>
                 </div>
-                <img class="col-md-12" src="assets/images/Rectangle25.png" />
                 <img class="col-md-12" src="assets/images/Rectangle28.png" />
               </div>
             </div>
@@ -119,14 +119,16 @@
                 <div class="battlecry-head">PLASTIK IPATALSIK</div>
                 <div class="header">
                   Most of Deplastic's content originate from the following
-                  <span>supporters.</span>
+                  <span>sources.</span>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="sources-details">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus pretium rhoncus elementum blandit. Enim tempus
-                  dictum diam suspendisse integer viverra netus facilisis amet. Amet faucibus ut feugiat in iaculis ac.<br /><br />Arcu
-                  tempor, gravida ultricies nunc aliquam elementum. Ut neque lectus habitant lacus ipsum. Viverra magna.
+                  We have gathered information about single-use plastics and their effects on the world from trusted online
+                  sources. You may see more from them by clicking their icon below.<br /><br />
+                  Additionally, if you would like to help in the fight against single-use plastics, you may do so by donating to
+                  different groups & organizations fighting single-use plastics. Click here for details about these different
+                  groups & organizations.
                 </div>
               </div>
             </div>
@@ -220,9 +222,34 @@
         </div>
       </div>
     </footer>
+    <script>
+      var text = [
+        "73% of beach litter worldwide is plastic.<br/> <br/>According to National Geographic, 73% of all beach litter is plastic .The litter includes filters from cigarette butts, bottles, bottle caps, food wrappers, grocery bags, and polystyrene containers.",
+        "50% of all plastics is estimated to be for single use purposes<br/> <br/> The average time that a plastic bag is used for is… 12 minutes.",
+        "A million plastic bottles are bought around the world every minute <br/> <br/> A report by the Guardian found that 1 million plastic bottles are bought around the world every minute, and this number is set to increase in the future if we don’t act. <br/> <br/><br/> The same report said more than 480 billion plastic drinking bottles were purchased in 2016 across the world — up from 300 billion a decade ago.<br/> <br/><br/>Additionally, less than half of the bottles purchased in 2016 were recycled — with just 7% of those collected turned into new bottles, and the rest ending up in landfill sites or the ocean.",
+        "Worldwide, about 2 million plastic bags are used every minute. <br/><br/> This might seem like an unbelievable number, but according to Ecowatch, between 500 billion and 1 trillion plastic bags are used worldwide annually.",
+        "Over the past 50 years, world plastic production has doubled.<br/> <br/> While increasing numbers of organisations and countries are banning plastic use and production, the world’s leading plastic manufacturers are planning to increase production by almost a third over the next five years, according to the World Economic Forum. <br/> <br/><br/> In 1974, global plastic consumption per year was 2 kilograms (4.4 pounds) per capita. Today, this has increased to 43 kilograms (about 95 pounds) — and this number is still set to increase. <br/> <br/><br/>If plastic consumption increases at its current rate, according to National Geographic, by 2050 there will be 12 billion metric tons of plastic in landfills.",
+        "Plastic is killing more than a million seabirds and animals every year.<br/> <br/> A study conducted by the University of Queensland in Australia, based on data collected since the late 1980s, found that Green sea turtles now ingest twice the plastic they did 25 years ago.<br/> <br/><br/> According to the United Nations, ingestion of plastic kills an estimated 1 million marine birds and 100,000 marine animals each year.<br/> <br/><br/> Additionally, more than 90%of all birds and fish are believed to have plastic particles in their stomach. It’s because plastic breaks up into tiny pieces in the sea, which are then consumed by fish and other sea animals.<br/> <br/><br/> By 2050, virtually every seabird species on the planet will be eating plastic.",
+        "More than 5 trillion pieces of plastic are already floating in our oceans. <br/> <br/> Estimates for how long plastic endures range from 450 years to forever.",
+        "Since the 1950s, around 8.3 billion tons of plastic have been produced worldwide. <br /> <br /> According to a report from the Guardian, an estimated 8.3 billion tons of plastic have been produced since the 1950s — that’s equivalent to the weight of more than 800,000 Eiffel Towers. <br /><br /><br /> And only 9% of it has been recycled.",
+      ];
+      var counter = 0;
+      var elem = document.getElementById("facts1");
+      var inst = setInterval(change, 10000);
+
+      function change() {
+        $("#facts1").fadeOut(500, function () {
+          elem.innerHTML = text[counter];
+        });
+        $("#facts1").fadeIn(500);
+        counter++;
+        if (counter >= text.length) {
+          counter = 0;
+        }
+      }
+    </script>
     <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
-
     <script src="assets/js/jquery-easing/jquery.easing.1.3.js"></script>
     <script src="assets/js/wow/wow.min.js"></script>
     <script src="assets/js/plugins.js"></script>
