@@ -1255,6 +1255,23 @@ a.navbar-brand.our_logo {
   padding: 0;
   width: 95%;
 }
+
+@media only screen and (max-device-width: 960px) {
+  .banner-wrapper {
+    margin-top: 100px;
+  }
+
+  .battlecry {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media only screen and (min-device-width: 768px) {
   .background {
     background: url(../images/Group26.png) center center no-repeat;
@@ -1322,13 +1339,10 @@ a.navbar-brand.our_logo {
     height: 3000px;
   }
 }
+
 /* REMOVED
 .footer {
   position: absolute;
   bottom: 0; right: 0; left: 0;
-}
-
-.slogan-container {
-  margin-top: 220px;
 }
 */
