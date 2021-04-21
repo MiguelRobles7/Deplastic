@@ -1246,6 +1246,12 @@ a.navbar-brand.our_logo {
 .phone-remove {
   display: none;
 }
+.col-sm-6.details .header{
+  font-size: 1.9em;
+}
+.col-sm-6 .sources-details{
+  margin: auto;
+}
 @media only screen and (min-device-width: 768px) {
   .background {
     background: url(../images/Group26.png) center center no-repeat;
@@ -1255,6 +1261,45 @@ a.navbar-brand.our_logo {
   }
   .phone-remove {
     display: block;
+  }
+  .sources-wrapper {
+    margin-top: 1350px;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+  }
+  .col-sm-6.details .header{
+    line-height: 1;
+    font-size: 2.7rem;
+    color: white;
+    font-family: Agrandir;
+  }
+  .col-sm-6 .sources-details{
+    padding-top: 35px;
+    margin-bottom: 30px;
+    color: #bcd9d7;
+    font-size: 1.1rem;
+    line-height: 0.9;
+    margin-left: 100px;
+    text-align: justify;
+    font-family: AgrandirRegular;
+  }
+  .facts-wrapper {
+    margin-top: 870px;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+  }
+  .facts-details {
+    margin-bottom: 25px;
+    color: #bcd9d7;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: justify;
+    letter-spacing: 0.8px;
+  }
+  .phone-remove {
+    display: none;
   }
 }
 /* Won't really support wide monitors */
