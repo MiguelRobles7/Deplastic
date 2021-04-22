@@ -24,6 +24,10 @@ PRE LOADER
   src: url("../fonts/Agrandir_Normal_Regular.ttf");
 }
 @font-face {
+  font-family: AgrandirMedium;
+  src: url("../fonts/Agrandir_Normal_Medium.ttf");
+}
+@font-face {
   font-family: AgrandirWide;
   src: url("../fonts/Agrandir_Wide_Bold.ttf");
 }
@@ -1513,7 +1517,35 @@ a.navbar-brand.our_logo {
     visibility: hidden;
   }
 }
+.feature-article-container {
+  margin-left: 150px;
+}
+.article-header {
+  line-height: 1;
+  font-size: 3.5rem;
+  color: white;
+  font-family: Agrandir;
+  margin-top: 100px;
+}
 
+.article-header-details {
+  color: white;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-family: AgrandirMedium;
+  width: 58%;
+  margin-bottom: 15px;
+}
+.feature-view-btn {
+  background: linear-gradient(#0d1115, #202529);
+  padding: 10px 35px;
+  border-radius: 7px;
+  font-family: Agrandir;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
 /* REMOVED
 .footer {
   position: absolute;
