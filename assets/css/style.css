@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin-left: 0;
   margin-right: 0;
-  font-family: "roboto", sans-serif;
+  font-family: AgrandirMedium;
   font-weight: 300;
 }
 /*==========================================
@@ -18,15 +18,19 @@ PRE LOADER
   font-family: Agrandir;
   src: url("../fonts/Agrandir_Normal_Bold.ttf");
 }
-
 @font-face {
   font-family: AgrandirRegular;
   src: url("../fonts/Agrandir_Normal_Regular.ttf");
 }
 @font-face {
+  font-family: AgrandirMedium;
+  src: url("../fonts/Agrandir\ Normal\ -\ Medium.ttf");
+}
+@font-face {
   font-family: AgrandirWide;
   src: url("../fonts/Agrandir_Wide_Bold.ttf");
 }
+
 @font-face {
   font-family: Mattsolar;
   src: url("../fonts/Mattsolar-2Oj28.ttf");
@@ -989,7 +993,7 @@ a.navbar-brand.our_logo {
   margin: 0;
   letter-spacing: 0.1rem;
   line-height: 1.3rem;
-  font-family: "Open Sans", bold;
+  font-family: Atyp;
 }
 
 .col-md-2.col-sm-6.col-xs-12.segment-one p1 {
@@ -999,7 +1003,7 @@ a.navbar-brand.our_logo {
   margin: 0;
   letter-spacing: 0.1rem;
   line-height: 1.3rem;
-  font-family: "Open Sans", bold;
+  font-family: Atyp;
 }
 
 .col-md-2.col-sm-6.col-xs-12.segment-one {
@@ -1042,7 +1046,7 @@ a.navbar-brand.our_logo {
   margin: 0;
   letter-spacing: 0.2rem;
   line-height: 1.3rem;
-  font-family: "Open Sans", bold;
+  font-family: Atyp;
 }
 
 .col-md-3.col-sm-6.col-xs-12.segment-four a {
@@ -1219,7 +1223,6 @@ a.navbar-brand.our_logo {
   line-height: 0.9;
   margin-left: 100px;
   text-align: justify;
-  font-family: AgrandirRegular;
 }
 
 .battlecry-head {
@@ -1387,7 +1390,6 @@ a.navbar-brand.our_logo {
     line-height: 0.9;
     margin-left: 100px;
     text-align: justify;
-    font-family: AgrandirRegular;
   }
   .facts-wrapper {
     margin-top: 870px;
@@ -1457,7 +1459,6 @@ a.navbar-brand.our_logo {
     line-height: 0.9;
     margin-left: 100px;
     text-align: justify;
-    font-family: AgrandirRegular;
   }
   .details .header {
     line-height: 1;

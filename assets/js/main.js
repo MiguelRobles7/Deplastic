@@ -48,8 +48,6 @@ jQuery(document).ready(function ($) {
             $('.scrollup').fadeOut('slow');
         }
 
-		console.log($(this).scrollTop());
-
 		// Scroll Buttons Toggle
 		var sec1Btn = document.getElementById('sec1Btn');
 		var sec2Btn = document.getElementById('sec2Btn');
