@@ -1213,6 +1213,7 @@ a.navbar-brand.our_logo {
   margin-left: 4px;
   padding-left: 20px;
   text-align: justify;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .sources-details {
   padding: 20px;
@@ -1223,6 +1224,7 @@ a.navbar-brand.our_logo {
   line-height: 0.9;
   margin-left: 100px;
   text-align: justify;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .battlecry-head {
@@ -1279,6 +1281,7 @@ a.navbar-brand.our_logo {
   letter-spacing: 0.8px;
   padding-left: 30px;
   padding-right: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .phone-remove {
   display: none;
