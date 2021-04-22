@@ -1489,13 +1489,13 @@ a.navbar-brand.our_logo {
 }
 
 /* Responsive Side Scroll Buttons */
-@media only screen and (max-device-width: 1800px) {
+@media only screen and (max-width: 1800px) {
   .scroll-wrapper {
     left: 0;
   }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .scroll-wrapper {
     visibility: hidden;
   }
