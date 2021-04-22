@@ -1297,7 +1297,7 @@ a.navbar-brand.our_logo {
   width: 95%;
 }
 
-/* SCROLL */
+/* SCROLL BUTTONS */
 .scroll-wrapper {
   top: 25%;
   left: 12%;
@@ -1313,6 +1313,12 @@ a.navbar-brand.our_logo {
   margin-top: 25px;
   border-radius: 50%;
   box-shadow: 0 1px 6px 0 #bcd9d7, 0 1px 6px 0 #bcd9d7;
+  opacity: 0.5;
+}
+
+/* active on page load */
+#sec1Btn {
+  opacity: 1;
 }
 
 #section1 {
@@ -1348,10 +1354,6 @@ a.navbar-brand.our_logo {
   .navbar {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .scroll-wrapper {
-    visibility: hidden;
   }
 }
 
@@ -1483,6 +1485,19 @@ a.navbar-brand.our_logo {
     background-size: cover;
     width: 100%;
     height: 3000px;
+  }
+}
+
+/* Responsive Side Scroll Buttons */
+@media only screen and (max-device-width: 1800px) {
+  .scroll-wrapper {
+    left: 0;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .scroll-wrapper {
+    visibility: hidden;
   }
 }
 
