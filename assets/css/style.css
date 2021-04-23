@@ -7,8 +7,9 @@ body {
   padding: 0;
   margin-left: 0;
   margin-right: 0;
-  font-family: AgrandirMedium;
+  font-family: "roboto", sans-serif;
   font-weight: 300;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 /*==========================================
 PRE LOADER 
@@ -18,19 +19,24 @@ PRE LOADER
   font-family: Agrandir;
   src: url("../fonts/Agrandir_Normal_Bold.ttf");
 }
+
 @font-face {
   font-family: AgrandirRegular;
   src: url("../fonts/Agrandir_Normal_Regular.ttf");
 }
 @font-face {
   font-family: AgrandirMedium;
-  src: url("../fonts/Agrandir\ Normal\ -\ Medium.ttf");
+  src: url("../fonts/Agrandir_Normal_Medium.ttf");
+}
+
+@font-face {
+  font-family: AgrandirHeavy;
+  src: url("../fonts/Agrandir_Normal_Heavy.ttf");
 }
 @font-face {
   font-family: AgrandirWide;
   src: url("../fonts/Agrandir_Wide_Bold.ttf");
 }
-
 @font-face {
   font-family: Mattsolar;
   src: url("../fonts/Mattsolar-2Oj28.ttf");
@@ -40,7 +46,15 @@ PRE LOADER
   font-family: Atyp;
   src: url("../fonts/AtypDisplay-Bold.ttf");
 }
+@font-face {
+  font-family: AtypSemiBold;
+  src: url("../fonts/AtypDisplay-Semibold.ttf");
+}
 
+@font-face {
+  font-family: AtypBold;
+  src: url("../fonts/AtypText-Bold.ttf");
+}
 .preloader {
   position: fixed;
   top: 0;
@@ -664,6 +678,12 @@ a.navbar-brand.our_logo {
   width: 100%;
   height: 1980px;
 }
+.article-background {
+  background-size: cover;
+  background-color: #ececec;
+  width: 100%;
+  height: 100%;
+}
 .main_slider {
 }
 .main_slider .main_slider_content h1 {
@@ -993,7 +1013,7 @@ a.navbar-brand.our_logo {
   margin: 0;
   letter-spacing: 0.1rem;
   line-height: 1.3rem;
-  font-family: Atyp;
+  font-family: "Open Sans", bold;
 }
 
 .col-md-2.col-sm-6.col-xs-12.segment-one p1 {
@@ -1003,7 +1023,7 @@ a.navbar-brand.our_logo {
   margin: 0;
   letter-spacing: 0.1rem;
   line-height: 1.3rem;
-  font-family: Atyp;
+  font-family: "Open Sans", bold;
 }
 
 .col-md-2.col-sm-6.col-xs-12.segment-one {
@@ -1046,7 +1066,7 @@ a.navbar-brand.our_logo {
   margin: 0;
   letter-spacing: 0.2rem;
   line-height: 1.3rem;
-  font-family: Atyp;
+  font-family: "Open Sans", bold;
 }
 
 .col-md-3.col-sm-6.col-xs-12.segment-four a {
@@ -1213,7 +1233,6 @@ a.navbar-brand.our_logo {
   margin-left: 4px;
   padding-left: 20px;
   text-align: justify;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .sources-details {
   padding: 20px;
@@ -1224,7 +1243,7 @@ a.navbar-brand.our_logo {
   line-height: 0.9;
   margin-left: 100px;
   text-align: justify;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  font-family: AgrandirRegular;
 }
 
 .battlecry-head {
@@ -1281,7 +1300,6 @@ a.navbar-brand.our_logo {
   letter-spacing: 0.8px;
   padding-left: 30px;
   padding-right: 30px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .phone-remove {
   display: none;
@@ -1347,6 +1365,53 @@ a.navbar-brand.our_logo {
   position: absolute;
 }
 
+.header-article {
+  background: url(../images/Rectangle64.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+}
+.article-picture {
+  min-width: 1100px;
+}
+.article-picture-seperator {
+  min-width: 1110px;
+  margin-left: -5px;
+}
+.article-title {
+  font-size: 2.5rem;
+  color: #000;
+  font-family: AgrandirHeavy;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.article-body {
+  font-size: 1.1rem;
+  font-family: AgrandirRegular;
+  color: #000;
+  margin-top: 15px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+.article-source {
+  font-family: AgrandirMedium;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.article-visit-btn {
+  background: linear-gradient(#0d1115, #202529);
+  width: 100px;
+  height: 22px;
+  padding: 9px 25px;
+  border-radius: 7px;
+  font-family: Agrandir;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
 @media only screen and (max-device-width: 960px) {
   .banner-wrapper {
     margin-top: 100px;
@@ -1393,6 +1458,7 @@ a.navbar-brand.our_logo {
     line-height: 0.9;
     margin-left: 100px;
     text-align: justify;
+    font-family: AgrandirRegular;
   }
   .facts-wrapper {
     margin-top: 870px;
@@ -1462,6 +1528,7 @@ a.navbar-brand.our_logo {
     line-height: 0.9;
     margin-left: 100px;
     text-align: justify;
+    font-family: AgrandirRegular;
   }
   .details .header {
     line-height: 1;
@@ -1493,22 +1560,135 @@ a.navbar-brand.our_logo {
 }
 
 /* Responsive Side Scroll Buttons */
-@media only screen and (max-width: 1820px) {
+@media only screen and (max-width: 1920px) {
   .scroll-wrapper {
-    left: 20px;
+    left: 0;
   }
 }
-@media only screen and (min-width: 1850px) {
-  .scroll-wrapper {
-    left: 13%;
-  }
-}
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 768px) {
   .scroll-wrapper {
     visibility: hidden;
   }
 }
+.feature-article-container {
+  margin-left: 150px;
+}
+.article-header {
+  line-height: 1;
+  font-size: 3.5rem;
+  color: white;
+  font-family: Agrandir;
+  margin-top: 100px;
+}
 
+.article-header-details {
+  color: white;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-family: AgrandirMedium;
+  width: 58%;
+  margin-bottom: 15px;
+}
+.feature-view-btn {
+  background: linear-gradient(#0d1115, #202529);
+  width: 150px;
+  height: 24px;
+  padding: 9px 25px;
+  border-radius: 7px;
+  font-family: Agrandir;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+.article-block-left {
+  background: #e5e5e5;
+  width: 14%;
+}
+.article-block-right {
+  background: #e5e5e5;
+  width: 22%;
+}
+.article-container {
+  padding: 50px;
+  width: 64%;
+  padding-left: 100px;
+}
+.donations-block {
+  background: #e5e5e5;
+  width: 6.25%;
+}
+.donations-container {
+  padding: 50px;
+  width: 87.5%;
+}
+.donations-background {
+  background-size: cover;
+  background-color: #ececec;
+  width: 100%;
+  height: 100%;
+}
+.donations-header {
+  font-family: Agrandir;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.donation-description {
+  font-family: AgrandirMedium;
+  font-size: 1.1rem;
+  color: black;
+  float: right;
+  text-align: right;
+}
+.card-main {
+  background: url(../images/Rectangle69.png) center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  max-width: 330px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.card-website-name {
+  font-family: AtypSemiBold;
+  color: white;
+  text-align: center;
+}
+.card-donation-information {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 25px;
+}
+.card-charity-name {
+  font-family: AgrandirHeavy;
+  text-decoration: underline;
+  color: white;
+  font-size: 1.6rem;
+}
+.card-charity-description {
+  font-family: AgrandirMedium;
+  text-align: justify;
+  word-spacing: 0.5;
+  color: white;
+  margin-right: 25px;
+}
+.donate-view-btn {
+  background: white;
+  width: 126px;
+  height: 18px;
+  padding: 5px 15px;
+  border-radius: 7px;
+  font-family: AtypBold;
+  color: black;
+  font-size: 0.7rem;
+}
+.donations-top {
+  margin-bottom: 10px;
+}
 /* REMOVED
 .footer {
   position: absolute;
