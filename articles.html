@@ -128,7 +128,25 @@
               View Article <img src="assets/images/view_article_button.svg" style="height: 1rem" />
             </a>
           </div>
-          <div class="article-block-right"></div>
+          <div class="article-block-right">
+            <div class="sidebar-index" id="right-index">
+              <h3>Index</h3>
+              <div class="first-sidebar">
+                <label for="who"><input type="checkbox" id="who">World Health Organization</label><br>
+                <label for="ccc"><input type="checkbox" id="ccc">Climate Change Commission</label><br>
+                <label for="tnw"><input type="checkbox" id="tnw">The Nature Welfare</label><br>
+                <label for="apc"><input type="checkbox" id="apc">Anti- Plastic Collective</label><br>
+                <label for="wc"><input type="checkbox" id="wc">Waster Corporation</label><br>
+              </div>
+              <div class="second-sidebar">
+                <label for="who"><input type="checkbox" id="who2">World Health Organization</label><br>
+                <label for="ccc"><input type="checkbox" id="ccc2">Climate Change Commission</label><br>
+                <label for="tnw"><input type="checkbox" id="tnw2">The Nature Welfare</label><br>
+                <label for="apc"><input type="checkbox" id="apc2">Anti-Plastic Collective</label><br>
+                <label for="wc"><input type="checkbox" id="wc2">Waster Corporation</label><br>
+              </div>
+          </div>
+          </div>
         </div>
       </div>
       <div class="col-sm-12">
@@ -259,5 +277,17 @@
     <script src="assets/js/wow/wow.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script> /* For sidebar */
+      window.onscroll = function() {myFunction()};
+      var sidebar = document.getElementById("right-index");
+      var sticky = sidebar.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          sidebar.classList.add("sticky")
+        } else {
+          sidebar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>

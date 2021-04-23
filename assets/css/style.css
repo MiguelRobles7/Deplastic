@@ -1404,6 +1404,44 @@ a.navbar-brand.our_logo {
   letter-spacing: 2px;
   margin-right: 20px;
 }
+
+.article-block-right h3 {
+  font-family: AgrandirHeavy;
+  color: #000;
+  font-size: 1.5em;
+}
+
+.article-block-right {
+  font-family: Agrandir, bold;
+  color: #000;
+  font-size: 1.2em;
+  padding: 10px 30px 0 30px;
+  line-height: 20px
+}
+
+.article-block-right .first-sidebar{
+  margin-bottom: 30px;
+  padding-right: 30%;
+}
+
+.article-block-right .second-sidebar{
+  padding-right: 30%;
+}
+
+.article-block-right input {
+  width: 2em;
+  height: 2em;
+  vertical-align: top;
+  float: left;
+  margin: 0 10px 15px 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-top: 30px;
+}
+
 @media only screen and (max-device-width: 960px) {
   .banner-wrapper {
     margin-top: 100px;
