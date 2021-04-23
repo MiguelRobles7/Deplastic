@@ -109,9 +109,9 @@
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum!</span>
               </div>
               <div class="col-sm-12">
-                <a class="article-source" href="https://www.who.int/" target="_blank">
+                <p class="article-source" target="_blank">
                   <img src="assets/images/Rectangle47.svg" style="margin-top: -5px" /> &nbsp; World Health Organization
-                </a>
+                </p>
               </div>
               <div class="col-sm-12 article-body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci non ullam soluta, harum maxime error optio
@@ -136,9 +136,9 @@
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum!</span>
               </div>
               <div class="col-sm-12">
-                <a class="article-source" href="https://www.who.int/" target="_blank">
-                  <img src="assets/images/Rectangle47.svg" style="margin-top: -5px" /> &nbsp; World Health Organization
-                </a>
+                <p class="article-source" target="_blank">
+                  <img src="assets/images/Rectangle47.svg" style="margin-top: -5px" /> &nbsp; Climate Change Commission
+                </p>
               </div>
               <div class="col-sm-12 article-body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci non ullam soluta, harum maxime error optio
@@ -163,9 +163,9 @@
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum!</span>
               </div>
               <div class="col-sm-12">
-                <a class="article-source" href="https://www.who.int/" target="_blank">
+                <p class="article-source">
                   <img src="assets/images/Rectangle47.svg" style="margin-top: -5px" /> &nbsp; World Health Organization
-                </a>
+                </p>
               </div>
               <div class="col-sm-12 article-body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci non ullam soluta, harum maxime error optio
@@ -186,20 +186,55 @@
           </div>
           <div class="article-block-right">
             <div class="sidebar-index" id="right-index">
-              <h3>Index</h3>
+              <h3 style="margin-top: 10px">Index</h3>
               <div class="first-sidebar">
-                <label for="who"><input type="checkbox" id="who" />World Health Organization</label><br />
-                <label for="ccc"><input type="checkbox" id="ccc" />Climate Change Commission</label><br />
-                <label for="tnw"><input type="checkbox" id="tnw" />The Nature Welfare</label><br />
-                <label for="apc"><input type="checkbox" id="apc" />Anti- Plastic Collective</label><br />
-                <label for="wc"><input type="checkbox" id="wc" />Waster Corporation</label><br />
-              </div>
-              <div class="second-sidebar">
-                <label for="who"><input type="checkbox" id="who2" />World Health Organization</label><br />
-                <label for="ccc"><input type="checkbox" id="ccc2" />Climate Change Commission</label><br />
-                <label for="tnw"><input type="checkbox" id="tnw2" />The Nature Welfare</label><br />
-                <label for="apc"><input type="checkbox" id="apc2" />Anti-Plastic Collective</label><br />
-                <label for="wc"><input type="checkbox" id="wc2" />Waster Corporation</label><br />
+                <label for="all"><input name="index" type="radio" id="all" onclick="filter('all','all')" checked />All</label
+                ><br />
+                <label for="who"
+                  ><input
+                    class="checkboxes"
+                    name="index"
+                    type="radio"
+                    id="who"
+                    onclick="filter('who','World Health Organization')"
+                  />World Health Organization</label
+                ><br />
+                <label for="ccc"
+                  ><input
+                    class="checkboxes"
+                    name="index"
+                    type="radio"
+                    id="ccc"
+                    onclick="filter('ccc','Climate Change Commission')"
+                  />Climate Change Commission</label
+                ><br />
+                <label for="tnw"
+                  ><input
+                    class="checkboxes"
+                    name="index"
+                    type="radio"
+                    id="tnw"
+                    onclick="filter('tnw', 'The Nature Welfare')"
+                  />The Nature Welfare</label
+                ><br />
+                <label for="apc"
+                  ><input
+                    class="checkboxes"
+                    name="index"
+                    type="radio"
+                    id="apc"
+                    onclick="filter('apc', 'Anti- Plastic Collective')"
+                  />Anti- Plastic Collective</label
+                ><br />
+                <label for="wc"
+                  ><input
+                    class="checkboxes"
+                    name="index"
+                    type="radio"
+                    id="wc"
+                    onclick="filter('wc', 'Waster Corporation')"
+                  />Waster Corporation</label
+                ><br />
               </div>
             </div>
           </div>
@@ -267,6 +302,23 @@
     <script src="assets/js/wow/wow.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      function filter(checkboxID, name) {
+        var elements = document.getElementsByClassName("normal-article");
+        var checkBox = document.getElementById(checkboxID);
+        for (var i = 0; i < elements.length; i++) {
+          if (checkBox.id == "all" && checkBox.checked) {
+            elements[i].style.display = "block";
+          } else if (checkBox.id == "all" && !checkBox.checked) {
+            elements[i].style.display = "none";
+          } else if (checkBox.checked && elements[i].getElementsByClassName("article-source")[0].innerHTML.includes(name)) {
+            elements[i].style.display = "block";
+          } else {
+            elements[i].style.display = "none";
+          }
+        }
+      }
+    </script>
     <script>
       /* For sidebar */
       window.onscroll = function () {
