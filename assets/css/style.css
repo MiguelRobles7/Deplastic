@@ -1416,15 +1416,15 @@ a.navbar-brand.our_logo {
   color: #000;
   font-size: 1.2em;
   padding: 10px 30px 0 30px;
-  line-height: 20px
+  line-height: 20px;
 }
 
-.article-block-right .first-sidebar{
+.article-block-right .first-sidebar {
   margin-bottom: 30px;
   padding-right: 30%;
 }
 
-.article-block-right .second-sidebar{
+.article-block-right .second-sidebar {
   padding-right: 30%;
 }
 
@@ -1640,11 +1640,15 @@ a.navbar-brand.our_logo {
   background: #e5e5e5;
   width: 22%;
 }
-.article-container {
+.articles-container {
   padding: 50px;
   width: 64%;
   padding-left: 100px;
 }
+.normal-article {
+  margin-bottom: 80px;
+}
+
 /* REMOVED
 .footer {
   position: absolute;
