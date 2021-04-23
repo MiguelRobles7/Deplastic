@@ -1695,3 +1695,29 @@ a.navbar-brand.our_logo {
   bottom: 0; right: 0; left: 0;
 }
 */
+@media only screen and (max-width: 1000px) {
+  .donations-block {
+    display: none;
+  }
+  .donations-container {
+    padding: 50px;
+    width: 100%;
+  }
+  .donation-description {
+    font-family: AgrandirMedium;
+    font-size: 1.1rem;
+    color: black;
+    float: none;
+    text-align: justify;
+    display: block;
+  }
+  .donations-header {
+    font-family: Agrandir;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 0;
+  }
+}
