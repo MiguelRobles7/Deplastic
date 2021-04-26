@@ -1361,14 +1361,19 @@ a.navbar-brand.our_logo {
   background: url(../images/Rectangle64.png) center center no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 500px;
+  min-height: 650px;
 }
 .article-picture {
-  min-width: 1100px;
+  width: 100%;
+  height: 275;
+}
+.article-picture-square {
+  width: 100%;
+  height: 275;
+  display: none;
 }
 .article-picture-seperator {
-  min-width: 1110px;
-  margin-left: -5px;
+  width: 100%;
 }
 .article-title {
   font-size: 2.5rem;
@@ -1645,6 +1650,77 @@ a.navbar-brand.our_logo {
   width: 64%;
   padding-left: 100px;
 }
+
+/* First Article Picture*/
+.first-picture-wrapper {
+  position: absolute;
+  width: 100%;
+}
+.articles-container.first {
+  padding-top: 110px;
+}
+.article-block-left.first {
+  background: none;
+}
+.article-block-right.first {
+  background: none;
+}
+
+@media only screen and (min-width: 2300px) {
+  .first-picture-wrapper {
+    top: 340px;
+  }
+}
+@media only screen and (max-width: 2300px) {
+  .first-picture-wrapper {
+    top: 440px;
+  }
+}
+@media only screen and (max-width: 1730px) {
+  .first-picture-wrapper {
+    top: 540px;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .first-picture-wrapper {
+    top: 640px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .article-picture {
+    display: none;
+  }
+  .article-picture-square {
+    width: 100%;
+    height: 275;
+    display: block;
+  }
+  .articles-container.first {
+    padding-top: 210px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .articles-container {
+    padding: 10px;
+    padding-left: 100px;
+  }
+  .articles-container.first {
+    padding-top: 140px;
+  }
+  .first-picture-wrapper {
+    top: 640px;
+  }
+}
+@media only screen and (max-width: 355px) {
+  .articles-container.first {
+    padding-top: 200px;
+  }
+  .first-picture-wrapper {
+    top: 740px;
+  }
+}
+
+/* First Article */
 .normal-article {
   margin-bottom: 80px;
 }
@@ -1671,7 +1747,7 @@ a.navbar-brand.our_logo {
 }
 
 .actual-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835358441995632660/Vector.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835358441995632660/Vector.png");
   background-size: 100% 100%;
   width: 65%;
   height: 65%;
@@ -1685,47 +1761,19 @@ a.navbar-brand.our_logo {
   transform: translateX(-45px);
 }
 
-@media only screen and (max-width: 991px) {
-  .article-index-collapsed {
-    padding: 15px 30px;
-    background-color: #08080A;
-    color: floralwhite;
-    border-bottom-left-radius: 15px;
-    right: 0;
-    transform: translateX(358px);
-  }
-
-  .article-index-open {
-    transform: translateX(0) !important;
-  }
-
-  .index-toggler {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    left:0; top: 0;
-    background-color: #08080A;
-    color: whitesmoke !important;
-    transform: translateX(-50px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-  }
-
-  .article-index-collapsed .first-sidebar {
-    padding: 0;
-  }
-  
-  .article-index-collapsed h3 {
-    color: floralwhite;
-  }  
+.sponsorship-text {
+  color: #000;
+  font-family: Agrandir;
+  font-size: 18px;
 }
 
-.index-toggler {
-  color: transparent;   
+.arrows {
+  position: absolute;
+  margin-left: -100px;
+  color: #000;
+  font-family: Agrandir;
+  font-size: 18px;
 }
-
 
 /* REMOVED
 .footer {
