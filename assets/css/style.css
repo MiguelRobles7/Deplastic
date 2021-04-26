@@ -1468,20 +1468,21 @@ a.navbar-brand.our_logo {
   letter-spacing: 2px;
   margin-right: 20px;
 }
+.articles-container {
+  padding: 50px;
+  width: 64%;
+  padding-left: 100px;
+}
 .article-block-left {
   background: #e5e5e5;
   width: 14%;
-  display: none;
+  display: block;
 }
 .article-block-right {
   background: #e5e5e5;
-  width: 0;
-  padding: 0;
-}
-.articles-container {
-  padding: 50px 30px 50px 30px;
-  width: 100%;
-  margin-bottom: 100px;
+  width: 22%;
+  display: block;
+  padding: 10px 0 0 30px;
 }
 
 /* First Article Picture*/
@@ -1688,17 +1689,6 @@ a.navbar-brand.our_logo {
     margin-bottom: 10px;
     padding: 0;
   }
-  .article-block-left {
-    background: #e5e5e5;
-    width: 14%;
-    display: block;
-  }
-  .article-block-right {
-    background: #e5e5e5;
-    width: 22%;
-    display: block;
-    padding: 10px 0 0 30px;
-  }
   .article-title {
     font-size: 2.5rem;
     color: #000;
@@ -1706,11 +1696,7 @@ a.navbar-brand.our_logo {
     text-decoration: underline;
     margin-bottom: 10px;
   }
-  .articles-container {
-    padding: 50px;
-    width: 64%;
-    padding-left: 100px;
-  }
+
   .article-body {
     font-size: 1.1em;
   }
@@ -1807,11 +1793,28 @@ a.navbar-brand.our_logo {
     top: 740px;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .article-block-left {
+    background: #e5e5e5;
+    width: 0;
+    display: none;
+  }
+  .article-block-right {
+    background: #e5e5e5;
+    width: 0;
+    padding: 0;
+  }
 
-@media only screen and (max-width: 991px) {
+  .articles-container {
+    padding: 50px 30px 50px 30px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 1400px) {
   .article-index-collapsed {
     padding: 15px 30px;
-    background-color: #08080A;
+    background-color: #08080a;
     color: floralwhite;
     border-bottom-left-radius: 15px;
     right: 0;
@@ -1826,8 +1829,9 @@ a.navbar-brand.our_logo {
     height: 50px;
     width: 50px;
     position: absolute;
-    left:0; top: 0;
-    background-color: #08080A;
+    left: 0;
+    top: 0;
+    background-color: #08080a;
     color: whitesmoke !important;
     transform: translateX(-50px);
     display: flex;
@@ -1839,14 +1843,14 @@ a.navbar-brand.our_logo {
   .article-index-collapsed .first-sidebar {
     padding: 0;
   }
-  
+
   .article-index-collapsed h3 {
     color: floralwhite;
-  }  
+  }
 }
 
 .index-toggler {
-  color: transparent;   
+  color: transparent;
 }
 
 .sticky {
@@ -1855,7 +1859,19 @@ a.navbar-brand.our_logo {
   margin-top: 30px;
 }
 
+.sponsorship-text {
+  color: #000;
+  font-family: Agrandir;
+  font-size: 1.6rem;
+}
 
+.arrows {
+  position: absolute;
+  margin-left: -100px;
+  color: #000;
+  font-family: Agrandir;
+  font-size: 1.6rem;
+}
 /* REMOVED
 .footer {
   position: absolute;
