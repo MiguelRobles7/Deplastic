@@ -1606,7 +1606,7 @@ a.navbar-brand.our_logo {
     visibility: hidden;
   }
 }
-.feature-articles-container {
+.feature-article-container {
   margin-left: 150px;
 }
 .article-header {
@@ -1759,6 +1759,20 @@ a.navbar-brand.our_logo {
   width: 5px;
   background-color: black;
   transform: translateX(-45px);
+}
+
+.sponsorship-text {
+  color: #000;
+  font-family: Agrandir;
+  font-size: 18px;
+}
+
+.arrows {
+  position: absolute;
+  margin-left: -100px;
+  color: #000;
+  font-family: Agrandir;
+  font-size: 18px;
 }
 
 /* REMOVED
