@@ -1326,7 +1326,7 @@ a.navbar-brand.our_logo {
 /* SCROLL BUTTONS */
 .scroll-wrapper {
   top: 25%;
-  left: 12%;
+  left: 4%;
   position: fixed;
 }
 
@@ -1732,13 +1732,17 @@ a.navbar-brand.our_logo {
 }
 
 /* Responsive Side Scroll Buttons */
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 2000px) {
   .scroll-wrapper {
     left: 0;
   }
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1500px) {
+  .scroll-wrapper {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
   .scroll-wrapper {
     visibility: hidden;
   }
@@ -1997,7 +2001,7 @@ a.navbar-brand.our_logo {
 .footer-partnerships {
   margin-bottom: 0;
   font-family: AtypBold;
-  color: #CB49F9;
+  color: #cb49f9;
   font-size: 15px;
 }
 
@@ -2005,30 +2009,30 @@ a.navbar-brand.our_logo {
 .phone-icon,
 .search-icon {
   background-size: 100% 100%;
-  width: 15px; 
+  width: 15px;
   height: 15px;
   float: left;
   margin-right: 10px;
 }
 .email-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835423346530975744/Vector_1.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835423346530975744/Vector_1.png");
 }
 
 .phone-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835423453632135168/Vector_2.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835423453632135168/Vector_2.png");
 }
 
 .search-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835423431804715018/Vector_3.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835423431804715018/Vector_3.png");
 }
 
 .footer-address {
   display: flex;
 }
 
-.contact-details, 
+.contact-details,
 .contact-details a {
-  color: #7BA9A9;
+  color: #7ba9a9;
   font-family: Agrandir;
 }
 
@@ -2041,7 +2045,7 @@ a.navbar-brand.our_logo {
 .partner {
   width: 33.33%;
   height: 30px;
-  background: linear-gradient(#0D1115, #20252A);
+  background: linear-gradient(#0d1115, #20252a);
   margin: 0 5px;
   border-radius: 7px;
   display: flex;
@@ -2053,7 +2057,7 @@ a.navbar-brand.our_logo {
 .partner-line {
   height: 6px;
   width: 100%;
-  background: linear-gradient(to right, #CB49F9, #6C50A7);
+  background: linear-gradient(to right, #cb49f9, #6c50a7);
   margin-bottom: 30px;
 }
 
@@ -2071,16 +2075,17 @@ a.navbar-brand.our_logo {
 }
 
 .partner .iac-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835439863557521458/iAcademy_Full_1.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439863557521458/iAcademy_Full_1.png");
 }
 
 .partner .ccc-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835439836432171018/image_26.png');
-  width: 26px; height: 26px;
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439836432171018/image_26.png");
+  width: 26px;
+  height: 26px;
 }
 
 .partner .deplastic-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835439872478150717/Group_14_2.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439872478150717/Group_14_2.png");
 }
 
 .col-md-3.col-sm-6.col-xs-12.segment-four .partner label {
@@ -2101,4 +2106,3 @@ a.navbar-brand.our_logo {
 .partner .content2 label {
   margin-left: 5px;
 }
-

@@ -72,13 +72,16 @@
           <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="articles.html">Articles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="donations.html">Donations</a>
               </li>
-              <li class="nav-item timeline-btn" id="timeline-btn">
-                <a class="nav-link" href="#">Timeline</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              <li class="nav-item timeline-btn">
+                <a class="nav-link" href="timeline.html">Timeline</a>
               </li>
             </ul>
           </div>
@@ -291,19 +294,25 @@
     <div class="scrollup">
       <a href="#"><i class="fa fa-chevron-up"></i></a>
     </div>
-    <footer>
+    <footer class="footer-top" id="footer">
       <div class="footer-top">
         <div class="container">
           <div class="wow zoomIn" data-wow-duration="3s">
             <div class="row">
               <div class="col-md-2 col-sm-6 col-xs-12 segment-one">
                 <h5>Deplastic</h5>
-                <img src="assets/images/facebook.svg" alt="facebook icon" />
-                <img src="assets/images/twitter.svg" alt="twitter icon" />
-                <img src="assets/images/instagram.svg" alt="instagram icon" />
+                <a href="https://www.facebook.com/CCCPhl/" target="_blank"
+                  ><img src="assets/images/facebook.svg" alt="facebook icon"
+                /></a>
+                <a href="https://twitter.com/CCCPhl" target="_blank"
+                  ><img src="assets/images/twitter.svg" alt="twitter icon"
+                /></a>
+                <a href="https://www.instagram.com/cccphl/" target="_blank"
+                  ><img src="assets/images/instagram.svg" alt="instagram icon"
+                /></a>
                 <p>Reach out to us anytime, anywhere through our social media accounts</p>
                 <br />
-                <p1>REACH OUT!</p1>
+                <p>REACH OUT!</p>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
                 <p>
@@ -316,24 +325,71 @@
                 </p>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-                <h4>Contacts</h4>
-                <p>6th Floor, First Residences Bldg. 1557 J.P. Laurel Street, San Miguel, Manila Philippines</p>
+                <h4 class="footer-contacts">CONTACT US</h4>
                 <p>
-                  Email:
-                  <a href="mailto:info@climate.gov.ph">info@climate.gov.ph</a>
+                  Feel free to inquire to us about what you can do to help contribute to lessening plastic use.
+                  <br />
+                  <br />
+                  Open 24/7
                 </p>
-                <p>Phone: <a href="tel:(632) 4205517">(632) 4205517</a></p>
+                <div class="contact-details">
+                  <div class="footer-address">
+                    <div class="icon-container">
+                      <div class="search-icon"></div>
+                    </div>
+                    <div class="address">
+                      6th Floor, First Residences Bldg. 1557 J.P. Laurel Street, San Miguel, Manila, Philippines
+                    </div>
+                  </div>
+                  <br />
+                  <div class="email-icon"></div>
+                  <a href="mailto:info@climate.gov.ph">info@climate.gov.ph</a>
+                  <br />
+                  <br />
+
+                  <div class="phone-icon"></div>
+                  <a href="tel:(632) 4205517">(632) 4205517</a>
+                </div>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-                <p1>SUBSCRIBE TO OUR NEWLETTER</p1>
-                <address>
-                  <a href="#">hello@deplastic.org</a>
-                </address>
-                <div class="agree">
-                  <input type="checkbox" id="agreement" />
-                  <label for="agreement">I agree to be sent weekly newsletters about the organizaion.</label>
+                <div class="footer-partnerships">PARTNERSHIPS</div>
+                <div class="partners">
+                  <div class="partner ccc">
+                    <div class="content">
+                      <div class="ccc-icon"></div>
+                    </div>
+                    <div class="content2">
+                      <label
+                        >CLIMATE<br />
+                        CHANGE <br />
+                        COMISSION</label
+                      >
+                    </div>
+                  </div>
+                  <div class="partner iac">
+                    <div class="content">
+                      <div class="iac-icon"></div>
+                    </div>
+                    <div class="content2">
+                      <label
+                        >IACADEMY <br />
+                        SENIOR HIGH DEPARTMENT</label
+                      >
+                    </div>
+                  </div>
+                  <div class="partner deplastic">
+                    <div class="content">
+                      <div class="deplastic-icon"></div>
+                    </div>
+                    <div class="content2">
+                      <label
+                        >THE <br />
+                        DEPLASTIC COLLECTIVE</label
+                      >
+                    </div>
+                  </div>
                 </div>
-                <img src="assets/images/Rectangle28.png" alt="rectangleLine" height="5px" width="240px" />
+                <div class="partner-line"></div>
                 <p>This concept is purely for educational purposes and may or may not reflect real-life scenarios.</p>
                 <p>All rights reserved.<br />Deplastic (C) 2021</p>
               </div>
@@ -341,108 +397,108 @@
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-easing/jquery.easing.1.3.js"></script>
-    <script src="assets/js/wow/wow.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      function filter(checkboxID, name) {
-        var elements = document.getElementsByClassName("normal-article");
-        var checkBox = document.getElementById(checkboxID);
-        for (var i = 0; i < elements.length; i++) {
-          if (checkBox.id == "all" && checkBox.checked) {
-            elements[i].style.display = "block";
-          } else if (checkBox.id == "all" && !checkBox.checked) {
-            elements[i].style.display = "none";
-          } else if (checkBox.checked && elements[i].getElementsByClassName("article-source")[0].innerHTML.includes(name)) {
-            elements[i].style.display = "block";
-          } else {
-            elements[i].style.display = "none";
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+      <script src="assets/js/vendor/bootstrap.min.js"></script>
+      <script src="assets/js/jquery-easing/jquery.easing.1.3.js"></script>
+      <script src="assets/js/wow/wow.min.js"></script>
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+        function filter(checkboxID, name) {
+          var elements = document.getElementsByClassName("normal-article");
+          var checkBox = document.getElementById(checkboxID);
+          for (var i = 0; i < elements.length; i++) {
+            if (checkBox.id == "all" && checkBox.checked) {
+              elements[i].style.display = "block";
+            } else if (checkBox.id == "all" && !checkBox.checked) {
+              elements[i].style.display = "none";
+            } else if (checkBox.checked && elements[i].getElementsByClassName("article-source")[0].innerHTML.includes(name)) {
+              elements[i].style.display = "block";
+            } else {
+              elements[i].style.display = "none";
+            }
           }
         }
-      }
-    </script>
-    <script>
-      // easier logging idk im too lazy
-      var log = (log) => {
-        console.log(log);
-      };
+      </script>
+      <script>
+        // easier logging idk im too lazy
+        var log = (log) => {
+          console.log(log);
+        };
 
-      /* For sidebar */
-      window.onscroll = function () {
-        myFunction();
-        toggleStickyIcons();
-      };
-      var sidebar = document.getElementById("right-index");
-      var aligner = document.getElementById("right-index-aligner");
-      var sticky = sidebar.offsetTop;
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          sidebar.classList.add("sticky");
-          aligner.style.marginTop = 0;
-        } else {
-          sidebar.classList.remove("sticky");
-          aligner.style.marginTop = "-56%";
-        }
-      }
-
-      // im so happy im finally coding ;v;
-      var iconsOffset = [];
-      addSpace = 0;
-      $(".article-icon").each((i, obj) => {
-        iconsOffset.push(obj.offsetTop - 50 + addSpace);
-        addSpace += 260;
-      });
-
-      var iconsOffsetBottom = [];
-      addSpace2 = 0;
-      $(".article-icon").each((i, obj) => {
-        var offsetBottom = obj.offsetTop + obj.offsetHeight + 800 + addSpace2;
-        addSpace2 += 250;
-        iconsOffsetBottom.push(offsetBottom);
-      });
-
-      var toggleStickyIcons = () => {
-        $(".article-icon").each((i, obj) => {
-          if (window.pageYOffset >= iconsOffset[i] && window.pageYOffset <= iconsOffsetBottom[i] - 230) {
-            obj.classList.add("sticky-icon");
+        /* For sidebar */
+        window.onscroll = function () {
+          myFunction();
+          toggleStickyIcons();
+        };
+        var sidebar = document.getElementById("right-index");
+        var aligner = document.getElementById("right-index-aligner");
+        var sticky = sidebar.offsetTop;
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            sidebar.classList.add("sticky");
+            aligner.style.marginTop = 0;
           } else {
-            obj.classList.remove("sticky-icon");
+            sidebar.classList.remove("sticky");
+            aligner.style.marginTop = "-56%";
+          }
+        }
+
+        // im so happy im finally coding ;v;
+        var iconsOffset = [];
+        addSpace = 0;
+        $(".article-icon").each((i, obj) => {
+          iconsOffset.push(obj.offsetTop - 50 + addSpace);
+          addSpace += 260;
+        });
+
+        var iconsOffsetBottom = [];
+        addSpace2 = 0;
+        $(".article-icon").each((i, obj) => {
+          var offsetBottom = obj.offsetTop + obj.offsetHeight + 800 + addSpace2;
+          addSpace2 += 250;
+          iconsOffsetBottom.push(offsetBottom);
+        });
+
+        var toggleStickyIcons = () => {
+          $(".article-icon").each((i, obj) => {
+            if (window.pageYOffset >= iconsOffset[i] && window.pageYOffset <= iconsOffsetBottom[i] - 230) {
+              obj.classList.add("sticky-icon");
+            } else {
+              obj.classList.remove("sticky-icon");
+            }
+          });
+        };
+
+        // NAVBAR TOGGLER
+        $(".navbar-toggler").on("click", () => {
+          var navbarnav = $("#navbarNav");
+          var timeline_btn = $("#timeline-btn");
+          if (navbarnav.hasClass("show")) {
+            navbarnav.css("margin-top", "0px");
+            navbarnav.removeClass("show");
+            timeline_btn.addClass("timeline-btn");
+          } else {
+            navbarnav.css("margin-top", "10px");
+            navbarnav.addClass("show");
+            timeline_btn.removeClass("timeline-btn");
           }
         });
-      };
 
-      // NAVBAR TOGGLER
-      $(".navbar-toggler").on("click", () => {
-        var navbarnav = $("#navbarNav");
-        var timeline_btn = $("#timeline-btn");
-        if (navbarnav.hasClass("show")) {
-          navbarnav.css("margin-top", "0px");
-          navbarnav.removeClass("show");
-          timeline_btn.addClass("timeline-btn");
-        } else {
-          navbarnav.css("margin-top", "10px");
-          navbarnav.addClass("show");
-          timeline_btn.removeClass("timeline-btn");
-        }
-      });
+        // INDEX TOGGLER
+        log($("#index-toggler"));
+        $("#index-toggler").on("click", () => {
+          var rightIndex = $("#right-index");
+          if (rightIndex.hasClass("article-index-open")) {
+            rightIndex.removeClass("article-index-open");
+          } else {
+            rightIndex.addClass("article-index-open");
+          }
+        });
 
-      // INDEX TOGGLER
-      log($("#index-toggler"));
-      $("#index-toggler").on("click", () => {
-        var rightIndex = $("#right-index");
-        if (rightIndex.hasClass("article-index-open")) {
-          rightIndex.removeClass("article-index-open");
-        } else {
-          rightIndex.addClass("article-index-open");
-        }
-      });
-
-      $(".article-index-collapsed");
-    </script>
+        $(".article-index-collapsed");
+      </script>
+    </footer>
   </body>
 </html>
