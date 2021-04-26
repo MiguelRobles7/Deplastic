@@ -541,7 +541,35 @@
             obj.classList.remove("sticky-icon");
           }
         });
-      };
+      }
+
+      // NAVBAR TOGGLER
+      $('.navbar-toggler').on('click', () => {
+        var navbarnav = $('#navbarNav');
+        var timeline_btn = $('#timeline-btn');
+        if (navbarnav.hasClass('show')) {
+          navbarnav.css("margin-top", "0px");
+          navbarnav.removeClass('show');
+          timeline_btn.addClass('timeline-btn');
+        } else {
+          navbarnav.css("margin-top", "10px");
+          navbarnav.addClass('show');
+          timeline_btn.removeClass('timeline-btn');
+        }
+      });
+
+      // INDEX TOGGLER
+      log($('#index-toggler'));
+      $('#index-toggler').on('click', () => {
+        var rightIndex = $('#right-index');
+        if(rightIndex.hasClass('article-index-open')) {
+          rightIndex.removeClass('article-index-open');
+        } else {
+          rightIndex.addClass('article-index-open');
+        }
+      });
+
+      $('.article-index-collapsed')
     </script>
   </body>
 </html>

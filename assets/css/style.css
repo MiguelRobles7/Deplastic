@@ -1761,19 +1761,47 @@ a.navbar-brand.our_logo {
   transform: translateX(-45px);
 }
 
-.sponsorship-text {
-  color: #000;
-  font-family: Agrandir;
-  font-size: 18px;
+@media only screen and (max-width: 991px) {
+  .article-index-collapsed {
+    padding: 15px 30px;
+    background-color: #08080A;
+    color: floralwhite;
+    border-bottom-left-radius: 15px;
+    right: 0;
+    transform: translateX(358px);
+  }
+
+  .article-index-open {
+    transform: translateX(0) !important;
+  }
+
+  .index-toggler {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left:0; top: 0;
+    background-color: #08080A;
+    color: whitesmoke !important;
+    transform: translateX(-50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  .article-index-collapsed .first-sidebar {
+    padding: 0;
+  }
+  
+  .article-index-collapsed h3 {
+    color: floralwhite;
+  }  
 }
 
-.arrows {
-  position: absolute;
-  margin-left: -100px;
-  color: #000;
-  font-family: Agrandir;
-  font-size: 18px;
+.index-toggler {
+  color: transparent;   
 }
+
 
 /* REMOVED
 .footer {
