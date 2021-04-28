@@ -2075,17 +2075,17 @@ a.navbar-brand.our_logo {
 }
 
 .partner .iac-icon {
-  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439863557521458/iAcademy_Full_1.png");
+  background-image: url(../images/iAcademy\ Full\ 1.svg);
 }
 
 .partner .ccc-icon {
-  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439836432171018/image_26.png");
+  background-image: url(../images/image\ 26.svg);
   width: 26px;
   height: 26px;
 }
 
 .partner .deplastic-icon {
-  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439872478150717/Group_14_2.png");
+  background-image: url(../images/Group\ 14\ 2.svg);
 }
 
 .col-md-3.col-sm-6.col-xs-12.segment-four .partner label {
