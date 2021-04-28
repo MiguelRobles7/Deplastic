@@ -33,6 +33,11 @@ PRE LOADER
   font-family: AgrandirHeavy;
   src: url("../fonts/Agrandir_Normal_Heavy.ttf");
 }
+
+@font-face {
+  font-family: AgrandirLight;
+  src: url("../fonts/Agrandir_Normal_Light.ttf");
+}
 @font-face {
   font-family: AgrandirWide;
   src: url("../fonts/Agrandir_Wide_Bold.ttf");
@@ -2105,4 +2110,164 @@ a.navbar-brand.our_logo {
 
 .partner .content2 label {
   margin-left: 5px;
+}
+
+.timeline-1 {
+  background: url(../images/timeline1.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 110vh;
+}
+.timeline-1 h1 {
+  font-size: 2.5rem;
+  color: #0d1115;
+  font-family: AgrandirRegular;
+  text-align: center;
+}
+.timeline-1 .container {
+  padding-top: 2rem;
+}
+.timeline-bottle {
+  width: 30%;
+  position: fixed;
+  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  /* margin-top: 0; */
+}
+.timeline-background {
+  background: url(../images/TIMELINE\ PAGE.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 9500px;
+}
+
+.timeline-section {
+  width: 100%;
+  position: relative;
+}
+
+.timeline-section-2 {
+  width: 100%;
+  position: relative;
+}
+
+.timeline-section-3 {
+  width: 100%;
+  position: relative;
+}
+.timeline-text-one {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 80vh;
+  font-family: AgrandirRegular;
+  text-align: center;
+}
+.timeline-text-two {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 40vh;
+  font-family: AgrandirRegular;
+  text-align: left;
+  line-height: 1;
+}
+.timeline-text-three {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 40vh;
+  font-family: AgrandirRegular;
+  text-align: left;
+  line-height: 1;
+}
+.timeline-ph-container {
+  width: 40%;
+  text-align: justify;
+  margin-top: -5vh;
+  padding-left: 200px;
+}
+
+.timeline-more-details {
+  margin-bottom: 25px;
+  color: white;
+  padding-right: 20px;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  text-align: justify;
+  font-family: AgrandirLight;
+}
+.bottle1 {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+}
+.bottle2 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.bottle3 {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  height: 200px;
+}
+.bottle4 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 200px;
+}
+.bottle5 {
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  height: 200px;
+}
+.bottle6 {
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+.bottle7 {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+
+.bottle8 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  height: 120px;
+}
+.bottle9 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 170px;
+}
+.bottle10 {
+  position: absolute;
+  top: 98%;
+  left: 75%;
+  height: 130px;
+}
+.bottle11 {
+  position: absolute;
+  top: 98%;
+  left: 12%;
+  height: 130px;
+}
+.bottle12 {
+  position: absolute;
+  top: 99%;
+  left: 23%;
+  height: 170px;
+}
+.bottle13 {
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  height: 200px;
 }
