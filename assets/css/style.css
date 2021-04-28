@@ -33,6 +33,11 @@ PRE LOADER
   font-family: AgrandirHeavy;
   src: url("../fonts/Agrandir_Normal_Heavy.ttf");
 }
+
+@font-face {
+  font-family: AgrandirLight;
+  src: url("../fonts/Agrandir_Normal_Light.ttf");
+}
 @font-face {
   font-family: AgrandirWide;
   src: url("../fonts/Agrandir_Wide_Bold.ttf");
@@ -1326,7 +1331,7 @@ a.navbar-brand.our_logo {
 /* SCROLL BUTTONS */
 .scroll-wrapper {
   top: 25%;
-  left: 12%;
+  left: 4%;
   position: fixed;
 }
 
@@ -1732,13 +1737,17 @@ a.navbar-brand.our_logo {
 }
 
 /* Responsive Side Scroll Buttons */
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 2000px) {
   .scroll-wrapper {
     left: 0;
   }
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1500px) {
+  .scroll-wrapper {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
   .scroll-wrapper {
     visibility: hidden;
   }
@@ -1997,7 +2006,7 @@ a.navbar-brand.our_logo {
 .footer-partnerships {
   margin-bottom: 0;
   font-family: AtypBold;
-  color: #CB49F9;
+  color: #cb49f9;
   font-size: 15px;
 }
 
@@ -2005,30 +2014,30 @@ a.navbar-brand.our_logo {
 .phone-icon,
 .search-icon {
   background-size: 100% 100%;
-  width: 15px; 
+  width: 15px;
   height: 15px;
   float: left;
   margin-right: 10px;
 }
 .email-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835423346530975744/Vector_1.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835423346530975744/Vector_1.png");
 }
 
 .phone-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835423453632135168/Vector_2.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835423453632135168/Vector_2.png");
 }
 
 .search-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835423431804715018/Vector_3.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835423431804715018/Vector_3.png");
 }
 
 .footer-address {
   display: flex;
 }
 
-.contact-details, 
+.contact-details,
 .contact-details a {
-  color: #7BA9A9;
+  color: #7ba9a9;
   font-family: Agrandir;
 }
 
@@ -2041,7 +2050,7 @@ a.navbar-brand.our_logo {
 .partner {
   width: 33.33%;
   height: 30px;
-  background: linear-gradient(#0D1115, #20252A);
+  background: linear-gradient(#0d1115, #20252a);
   margin: 0 5px;
   border-radius: 7px;
   display: flex;
@@ -2053,7 +2062,7 @@ a.navbar-brand.our_logo {
 .partner-line {
   height: 6px;
   width: 100%;
-  background: linear-gradient(to right, #CB49F9, #6C50A7);
+  background: linear-gradient(to right, #cb49f9, #6c50a7);
   margin-bottom: 30px;
 }
 
@@ -2071,16 +2080,17 @@ a.navbar-brand.our_logo {
 }
 
 .partner .iac-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835439863557521458/iAcademy_Full_1.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439863557521458/iAcademy_Full_1.png");
 }
 
 .partner .ccc-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835439836432171018/image_26.png');
-  width: 26px; height: 26px;
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439836432171018/image_26.png");
+  width: 26px;
+  height: 26px;
 }
 
 .partner .deplastic-icon {
-  background-image: url('https://media.discordapp.net/attachments/742369003002921031/835439872478150717/Group_14_2.png');
+  background-image: url("https://media.discordapp.net/attachments/742369003002921031/835439872478150717/Group_14_2.png");
 }
 
 .col-md-3.col-sm-6.col-xs-12.segment-four .partner label {
@@ -2102,3 +2112,162 @@ a.navbar-brand.our_logo {
   margin-left: 5px;
 }
 
+.timeline-1 {
+  background: url(../images/timeline1.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 110vh;
+}
+.timeline-1 h1 {
+  font-size: 2.5rem;
+  color: #0d1115;
+  font-family: AgrandirRegular;
+  text-align: center;
+}
+.timeline-1 .container {
+  padding-top: 2rem;
+}
+.timeline-bottle {
+  width: 30%;
+  position: fixed;
+  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  /* margin-top: 0; */
+}
+.timeline-background {
+  background: url(../images/TIMELINE\ PAGE.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 9500px;
+}
+
+.timeline-section {
+  width: 100%;
+  position: relative;
+}
+
+.timeline-section-2 {
+  width: 100%;
+  position: relative;
+}
+
+.timeline-section-3 {
+  width: 100%;
+  position: relative;
+}
+.timeline-text-one {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 80vh;
+  font-family: AgrandirRegular;
+  text-align: center;
+}
+.timeline-text-two {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 40vh;
+  font-family: AgrandirRegular;
+  text-align: left;
+  line-height: 1;
+}
+.timeline-text-three {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 40vh;
+  font-family: AgrandirRegular;
+  text-align: left;
+  line-height: 1;
+}
+.timeline-ph-container {
+  width: 40%;
+  text-align: justify;
+  margin-top: -5vh;
+  padding-left: 200px;
+}
+
+.timeline-more-details {
+  margin-bottom: 25px;
+  color: white;
+  padding-right: 20px;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  text-align: justify;
+  font-family: AgrandirLight;
+}
+.bottle1 {
+  position: absolute;
+  top: 25%;
+  left: 70%;
+}
+.bottle2 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.bottle3 {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  height: 200px;
+}
+.bottle4 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  height: 200px;
+}
+.bottle5 {
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  height: 200px;
+}
+.bottle6 {
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+.bottle7 {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+
+.bottle8 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  height: 120px;
+}
+.bottle9 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 170px;
+}
+.bottle10 {
+  position: absolute;
+  top: 98%;
+  left: 75%;
+  height: 130px;
+}
+.bottle11 {
+  position: absolute;
+  top: 98%;
+  left: 12%;
+  height: 130px;
+}
+.bottle12 {
+  position: absolute;
+  top: 99%;
+  left: 23%;
+  height: 170px;
+}
+.bottle13 {
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  height: 200px;
+}
