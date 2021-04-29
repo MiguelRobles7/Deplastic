@@ -1996,6 +1996,34 @@ a.navbar-brand.our_logo {
   margin: 10px;
   border-radius: 15px;
 }
+#WWF-card {
+  background: url(../images/Rectangle70.png) center center no-repeat;
+  background-size: cover;
+}
+#Plastic-Ocean-card {
+  background: url(../images/Rectangle71.png) center center no-repeat;
+  background-size: cover;
+}
+#gyres-card {
+  background: url(../images/Rectangle72.png) center center no-repeat;
+  background-size: cover;
+}
+#ndrc-card {
+  background: url(../images/Rectangle73.png) center center no-repeat;
+  background-size: cover;
+}
+#ppc-card {
+  background: url(../images/Rectangle74.png) center center no-repeat;
+  background-size: cover;
+}
+#pec-card {
+  background: url(../images/Rectangle75.png) center center no-repeat;
+  background-size: cover;
+}
+#proj-aware-card {
+  background: url(../images/Rectangle76.png) center center no-repeat;
+  background-size: cover;
+}
 .card-website-name {
   font-family: AtypSemiBold;
   color: white;
