@@ -1460,11 +1460,10 @@ a.navbar-brand.our_logo {
 }
 .article-header {
   line-height: 1;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: white;
   font-family: Agrandir;
   margin-top: 100px;
-
 }
 
 @media only screen and (max-device-width: 1800px) {
@@ -1473,7 +1472,7 @@ a.navbar-brand.our_logo {
   }
 
   .article-header-details {
-    width: 500px !important;
+    width: 800px !important;
   }
 }
 
@@ -1754,7 +1753,7 @@ a.navbar-brand.our_logo {
     margin-left: 150px;
   }
   .article-header-details {
-    width: 58%;
+    width: 70%;
   }
   .articles-container.first {
     padding-top: 9%;
@@ -2306,4 +2305,3 @@ a.navbar-brand.our_logo {
   left: 63%;
   height: 200px;
 }
-
