@@ -21,7 +21,7 @@
             $("#itGoesDown").fadeIn(300)
 
         }
-        if ($(window).scrollTop() > 2100) {
+        if ($(window).scrollTop() > 1600) {
             $("#trashDumpIntoOcean").fadeOut(300)
         }
         else{
@@ -32,6 +32,12 @@
         }
         else{
             $("#bottle").fadeIn(300);
+        }
+        if ($(window).scrollTop() > 7000) {
+            $("#bottle2").fadeOut(300);
+        }
+        else{
+            $("#bottle2").fadeIn(300);
         }
     });
 });
@@ -521,4 +527,55 @@ const slide5TextScene = new ScrollMagic.Scene({
     triggerHook: 0,
 })
 .setTween(slide5TextTween)
+.addTo(controller);
+
+const slide6Bottle = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: -200, y: 100},
+    ]
+}
+const slide6Tween = new TimelineLite();
+
+slide6Tween.add(
+    TweenLite.to(".slide6Bottle", 1, {
+        bezier: slide6Bottle,
+        ease: Power1.easeInOut,
+        opacity: 1,
+    })
+);
+
+const slide6Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-5',
+    duration: 500,
+    triggerHook: 0,
+})
+.setTween(slide6Tween)
+.setPin('.timeline-section-5')
+.addTo(controller);
+
+const slide6Text = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: 100, y: 100},
+    ]
+}
+const slide6TextTween = new TimelineLite();
+
+slide6TextTween.add(
+    TweenLite.to(".timeline-ph-container-3", 1, {
+        bezier: slide6Text,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const slide6TextScene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-5',
+    duration: 500,
+    triggerHook: 0,
+})
+.setTween(slide6TextTween)
 .addTo(controller);
