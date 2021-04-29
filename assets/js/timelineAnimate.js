@@ -4,7 +4,9 @@
 
  "use strict";
 
-
+ var onetime1 = false;
+ var onetime2 = false;
+ var onetime3 = false;
  jQuery(document).ready(function ($) { 
     $(window).scroll(function() {
         var theta = $(window).scrollTop() / 500 % Math.PI;
@@ -38,6 +40,30 @@
         }
         else{
             $("#bottle2").fadeIn(300);
+        }
+        if ($(window).scrollTop() > 8500) {
+            $("#bottle3").fadeOut(300);
+        }
+        else{
+            $("#bottle3").fadeIn(300);
+        }
+
+
+        if ($(window).scrollTop() <= 11400 && $(window).scrollTop() > 10700) {
+            document.getElementById("awareness-text").innerHTML = "fight for the cause, consider <a href='donations.html'> donating here</a>";
+        }
+        else if ($(window).scrollTop() <= 10700 && $(window).scrollTop() > 10000) {
+                document.getElementById("awareness-text").innerHTML = "and there's nothing we can do, unless we work together";
+        }
+        else if ($(window).scrollTop() <= 10000 && $(window).scrollTop() > 9300) {
+                document.getElementById("awareness-text").innerHTML = "single-use plastic is a big reason why this is happening";
+        }
+        else if ($(window).scrollTop() <= 9300 && $(window).scrollTop() > 8600) {
+                document.getElementById("awareness-text").innerHTML = "plastic is killing our planet"; 
+                $("#awareness-text").fadeIn();
+        }
+        else{
+            $("#awareness-text").fadeOut();
         }
     });
 });
@@ -578,4 +604,206 @@ const slide6TextScene = new ScrollMagic.Scene({
     triggerHook: 0,
 })
 .setTween(slide6TextTween)
+.addTo(controller);
+
+const in1 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: 1200, y: window.innerHeight + 1000},
+    ]
+}
+const in1Tween = new TimelineLite();
+
+in1Tween.add(
+    TweenLite.to(".in1", 1, {
+        bezier: in1,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in1Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in1Tween)
+.setPin('timeline-section-6')
+.addTo(controller);
+
+const in2 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: -400, y: window.innerHeight + 1000},
+    ]
+}
+const in2Tween = new TimelineLite();
+
+in2Tween.add(
+    TweenLite.to(".in2", 1, {
+        bezier: in2,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in2Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in2Tween)
+.addTo(controller);
+
+const in3 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: 400, y: window.innerHeight + 2000},
+    ]
+}
+const in3Tween = new TimelineLite();
+
+in3Tween.add(
+    TweenLite.to(".in3", 1, {
+        bezier: in3,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in3Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in3Tween)
+.addTo(controller);
+
+const in4 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: -1000, y: 600},
+    ]
+}
+const in4Tween = new TimelineLite();
+
+in4Tween.add(
+    TweenLite.to(".in4", 1, {
+        bezier: in4,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in4Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in4Tween)
+.addTo(controller);
+
+const in5 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: 1000, y: 600},
+    ]
+}
+const in5Tween = new TimelineLite();
+
+in5Tween.add(
+    TweenLite.to(".in5", 1, {
+        bezier: in5,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in5Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in5Tween)
+.addTo(controller);
+
+const in6 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: -1000, y: 600},
+    ]
+}
+const in6Tween = new TimelineLite();
+
+in6Tween.add(
+    TweenLite.to(".in6", 1, {
+        bezier: in6,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in6Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in6Tween)
+.addTo(controller);
+
+const in7 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: -1000, y: window.innerHeight + 1500},
+    ]
+}
+const in7Tween = new TimelineLite();
+
+in7Tween.add(
+    TweenLite.to(".in7", 1, {
+        bezier: in7,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in7Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in7Tween)
+.addTo(controller);
+
+const in8 = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: 1000, y: 1000},
+        {x: 2000, y: 600},
+    ]
+}
+const in8Tween = new TimelineLite();
+
+in8Tween.add(
+    TweenLite.to(".in8", 1, {
+        bezier: in8,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const in8Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-6',
+    duration: 2000,
+    triggerHook: 0,
+})
+.setTween(in8Tween)
 .addTo(controller);
