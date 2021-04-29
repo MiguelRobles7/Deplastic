@@ -1447,7 +1447,7 @@ a.navbar-brand.our_logo {
   padding-right: 30%;
 }
 
-.article-block-right input {
+.article-block-right .radio {
   width: 2em;
   height: 2em;
   vertical-align: top;
@@ -1455,6 +1455,29 @@ a.navbar-brand.our_logo {
   margin: 0 10px 15px 0;
 }
 
+/* SEARCH BAR */
+.search-wrapper {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.search-wrapper input {
+  width: 85%;
+  padding: 5px;
+  border: 0;
+}
+
+.search-wrapper button {
+  width: 15%;
+  padding: 4.5px;
+  border: 0;
+  border-radius: 10%;
+  color: #fff;
+  background-color: #000;
+}
+.search-wrapper button:hover {
+  opacity: 70%;
+}
 .feature-article-container {
   margin-left: 30px;
 }
