@@ -1016,11 +1016,6 @@
                 <div class="wow bounceInRight" data-wow-duration="3s">
                   <h3 style="font-family: Agrandir; font-size: 1.6rem">Index</h3>
                   <div class="first-sidebar">
-                    <!-- SEARCH BAR -->
-                      <div class="search-wrapper">
-                        <input type="text" id="search" placeholder="Search">
-                        <button type="submit" onclick="filter('all','all')"><i class="fa fa-search"></i></button>
-                      </div><br />
                     <!-- FILTERS -->
                     <label for="all"><input class="radio" name="index" type="radio" id="all" onclick="filter('all','all')" checked />All</label
                     ><br />
@@ -1051,6 +1046,11 @@
                         onclick="filter('ng', 'National Geographic')"
                       />National Geographic</label
                     ><br />
+                    <!-- SEARCH BAR -->
+                    <div class="search-wrapper">
+                      <input type="text" id="search" placeholder="Search an Article">
+                      <button type="submit" onclick="filter('all','all')"><i class="fa fa-search"></i></button>
+                    </div>
                   </div>
                 </div>
               </div>
