@@ -1950,6 +1950,14 @@ a.navbar-brand.our_logo {
   background: url(../images/Rectangle74.png) center center no-repeat;
   background-size: cover;
 }
+#pec-card {
+  background: url(../images/Rectangle75.png) center center no-repeat;
+  background-size: cover;
+}
+#proj-aware-card {
+  background: url(../images/Rectangle76.png) center center no-repeat;
+  background-size: cover;
+}
 .card-website-name {
   font-family: AtypSemiBold;
   color: white;
