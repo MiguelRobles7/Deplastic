@@ -1956,6 +1956,13 @@ a.navbar-brand.our_logo {
   float: right;
   text-align: right;
 }
+.donations-link {
+  background: -webkit-linear-gradient(#9187e9, #cb49f9);
+  background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 .card-main {
   background: url(../images/Rectangle69.png) center center no-repeat;
   background-size: cover;
