@@ -60,6 +60,7 @@ PRE LOADER
   font-family: AtypBold;
   src: url("../fonts/AtypText-Bold.ttf");
 }
+
 .preloader {
   position: fixed;
   top: 0;
@@ -1380,7 +1381,9 @@ a.navbar-brand.our_logo {
 }
 .article-picture {
   width: 100%;
-  height: 275;
+  height: 275px;
+  max-height: 275px;
+  object-fit: cover;
 }
 .article-picture-square {
   width: 100%;
@@ -1444,7 +1447,7 @@ a.navbar-brand.our_logo {
   padding-right: 30%;
 }
 
-.article-block-right input {
+.article-block-right .radio {
   width: 2em;
   height: 2em;
   vertical-align: top;
@@ -1452,15 +1455,71 @@ a.navbar-brand.our_logo {
   margin: 0 10px 15px 0;
 }
 
+/* SEARCH BAR */
+.search-wrapper {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.search-wrapper input {
+  width: 83%;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 2%;
+}
+
+.search-wrapper button {
+  width: 15%;
+  padding: 4.5px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000;
+}
+.search-wrapper button:hover {
+  opacity: 70%;
+}
 .feature-article-container {
   margin-left: 30px;
 }
 .article-header {
   line-height: 1;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: white;
   font-family: Agrandir;
   margin-top: 100px;
+}
+
+@media only screen and (max-device-width: 1800px) {
+  .article-header {
+    width: 650px;
+  }
+
+  .article-header-details {
+    width: 800px !important;
+  }
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .articles-container.first {
+    padding-top: 40% !important;
+  }
+}
+
+@media only screen and (max-device-width: 650px) {
+  .article-header {
+    font-size: 2rem !important;
+    width: 100%;
+  }
+
+  .article-header-details {
+    width: 80% !important;
+  }
+
+  .articles-container.first {
+    padding-top: 10% !important;
+  }
 }
 
 .article-header-details {
@@ -1719,7 +1778,7 @@ a.navbar-brand.our_logo {
     margin-left: 150px;
   }
   .article-header-details {
-    width: 58%;
+    width: 70%;
   }
   .articles-container.first {
     padding-top: 9%;
@@ -1922,6 +1981,13 @@ a.navbar-brand.our_logo {
   float: right;
   text-align: right;
 }
+.donations-link {
+  background: -webkit-linear-gradient(#9187e9, #cb49f9);
+  background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 .card-main {
   background: url(../images/Rectangle69.png) center center no-repeat;
   background-size: cover;
@@ -1929,6 +1995,34 @@ a.navbar-brand.our_logo {
   max-width: 330px;
   margin: 10px;
   border-radius: 15px;
+}
+#WWF-card {
+  background: url(../images/Rectangle70.png) center center no-repeat;
+  background-size: cover;
+}
+#Plastic-Ocean-card {
+  background: url(../images/Rectangle71.png) center center no-repeat;
+  background-size: cover;
+}
+#gyres-card {
+  background: url(../images/Rectangle72.png) center center no-repeat;
+  background-size: cover;
+}
+#ndrc-card {
+  background: url(../images/Rectangle73.png) center center no-repeat;
+  background-size: cover;
+}
+#ppc-card {
+  background: url(../images/Rectangle74.png) center center no-repeat;
+  background-size: cover;
+}
+#pec-card {
+  background: url(../images/Rectangle75.png) center center no-repeat;
+  background-size: cover;
+}
+#proj-aware-card {
+  background: url(../images/Rectangle76.png) center center no-repeat;
+  background-size: cover;
 }
 .card-website-name {
   font-family: AtypSemiBold;
