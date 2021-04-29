@@ -1464,6 +1464,38 @@ a.navbar-brand.our_logo {
   color: white;
   font-family: Agrandir;
   margin-top: 100px;
+
+}
+
+@media only screen and (max-device-width: 1800px) {
+  .article-header {
+    width: 650px;
+  }
+
+  .article-header-details {
+    width: 500px !important;
+  }
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .articles-container.first {
+    padding-top: 40% !important;
+  }
+}
+
+@media only screen and (max-device-width: 650px) {
+  .article-header {
+    font-size: 2rem !important;
+    width: 100%;
+  }
+
+  .article-header-details {
+    width: 80% !important;
+  }
+
+  .articles-container.first {
+    padding-top: 10% !important;
+  }
 }
 
 .article-header-details {
