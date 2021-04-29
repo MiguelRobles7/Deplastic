@@ -2217,10 +2217,10 @@ a.navbar-brand.our_logo {
   /* margin-top: 0; */
 }
 .timeline-background {
-  background: url(../images/TIMELINE\ PAGE.png) center center no-repeat;
+  background: url(../images/TIMELINE\ PAGE.svg) center center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 9500px;
+  height: 12000px;
 }
 
 .timeline-section {
@@ -2236,6 +2236,20 @@ a.navbar-brand.our_logo {
 .timeline-section-3 {
   width: 100%;
   position: relative;
+}
+
+.timeline-section-4 {
+  width: 100%;
+  position: relative;
+}
+.timeline-section-5 {
+  width: 100%;
+  position: relative;
+}
+.timeline-section-6 {
+  width: 100%;
+  position: relative;
+  height: 200vh;
 }
 .timeline-text-one {
   font-size: 2.5rem;
@@ -2260,18 +2274,62 @@ a.navbar-brand.our_logo {
   text-align: left;
   line-height: 1;
 }
+
+.timeline-text-four {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 40vh;
+  font-family: AgrandirRegular;
+  text-align: left;
+  line-height: 1;
+}
+.timeline-text-five {
+  font-size: 2.5rem;
+  color: white;
+  font-family: AgrandirRegular;
+  text-align: center;
+  line-height: 1;
+  position: fixed;
+  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  top: 40%;
+  display: none;
+}
 .timeline-ph-container {
   width: 40%;
   text-align: justify;
   margin-top: -5vh;
   padding-left: 200px;
 }
-
+.timeline-ph-container-2 {
+  text-align: justify;
+  width: 80%;
+  padding-left: -10vh;
+  margin-top: -5vh;
+  opacity: 0;
+}
+.timeline-ph-container-3 {
+  text-align: justify;
+  width: 80%;
+  margin-top: -5vh;
+  opacity: 0;
+}
 .timeline-more-details {
   margin-bottom: 25px;
   color: white;
   padding-right: 20px;
   font-size: 1.3rem;
+  line-height: 1.1;
+  text-align: justify;
+  font-family: AgrandirLight;
+}
+
+.timeline-more-details-2 {
+  margin-bottom: 25px;
+  color: white;
+  padding-right: 20px;
+  font-size: 1.5rem;
   line-height: 1.1;
   text-align: justify;
   font-family: AgrandirLight;
@@ -2315,7 +2373,6 @@ a.navbar-brand.our_logo {
   top: 50%;
   left: 2%;
 }
-
 .bottle8 {
   position: absolute;
   top: 15%;
@@ -2351,4 +2408,90 @@ a.navbar-brand.our_logo {
   top: 50%;
   left: 63%;
   height: 200px;
+}
+.slide5Bottle {
+  margin-left: -70vh;
+  width: 2500px;
+  opacity: 0;
+}
+.slide6Bottle {
+  margin-left: 30vh;
+  width: 4000px;
+  opacity: 0;
+}
+.in1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+.in2 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.in3 {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  height: 200px;
+}
+.in4 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  height: 200px;
+}
+.in5 {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  height: 200px;
+}
+.in6 {
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+.in7 {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.in8 {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  height: 120px;
+}
+.mobile-message {
+  display: none;
+}
+@media only screen and (max-width: 899px) {
+  .timeline-background {
+    width: 100%;
+    height: 100vh;
+  }
+  .timeline-1,
+  .timeline-section,
+  .timeline-section-2,
+  .timeline-section-3,
+  .timeline-section-4,
+  .timeline-section-5,
+  .timeline-section-6 {
+    display: none;
+  }
+  .timeline-bottle {
+    height: 1px;
+  }
+  .mobile-message {
+    display: block;
+    font-size: 2.5rem;
+    color: white;
+    padding-top: 10vh;
+    font-family: AgrandirRegular;
+    text-align: left;
+    line-height: 1;
+    margin: 5vh;
+  }
 }
