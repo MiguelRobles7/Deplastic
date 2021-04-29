@@ -2143,6 +2143,11 @@ a.navbar-brand.our_logo {
   width: 100%;
   position: relative;
 }
+
+.timeline-section-4 {
+  width: 100%;
+  position: relative;
+}
 .timeline-text-one {
   font-size: 2.5rem;
   color: white;
@@ -2166,18 +2171,44 @@ a.navbar-brand.our_logo {
   text-align: left;
   line-height: 1;
 }
+
+.timeline-text-four {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 40vh;
+  font-family: AgrandirRegular;
+  text-align: left;
+  line-height: 1;
+}
+
 .timeline-ph-container {
   width: 40%;
   text-align: justify;
   margin-top: -5vh;
   padding-left: 200px;
 }
-
+.timeline-ph-container-2 {
+  text-align: justify;
+  width: 80%;
+  padding-left: -10vh;
+  margin-top: -5vh;
+  opacity: 0;
+}
 .timeline-more-details {
   margin-bottom: 25px;
   color: white;
   padding-right: 20px;
   font-size: 1.3rem;
+  line-height: 1.1;
+  text-align: justify;
+  font-family: AgrandirLight;
+}
+
+.timeline-more-details-2 {
+  margin-bottom: 25px;
+  color: white;
+  padding-right: 20px;
+  font-size: 1.5rem;
   line-height: 1.1;
   text-align: justify;
   font-family: AgrandirLight;
@@ -2257,4 +2288,9 @@ a.navbar-brand.our_logo {
   top: 50%;
   left: 63%;
   height: 200px;
+}
+.slide5Bottle {
+  margin-left: -70vh;
+  width: 2500px;
+  opacity: 0;
 }

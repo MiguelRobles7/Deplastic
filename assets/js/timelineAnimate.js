@@ -26,11 +26,15 @@
         }
         else{
             $("#trashDumpIntoOcean").fadeIn(300)
-
+        }
+        if ($(window).scrollTop() > 5000) {
+            $("#bottle").fadeOut(300);
+        }
+        else{
+            $("#bottle").fadeIn(300);
         }
     });
-
- });
+});
  
 const controller = new ScrollMagic.Controller();
 
@@ -465,4 +469,56 @@ const scene13 = new ScrollMagic.Scene({
 })
 .setTween(tween13)
  
+.addTo(controller);
+
+const slide5Bottle = {
+    curviness: 1.25,
+    autoRotate: true,
+    values: [
+        {x: 0, y: 0},
+        {x: 800, y: 100},
+    ]
+}
+const slide5Tween = new TimelineLite();
+
+slide5Tween.add(
+    TweenLite.to(".slide5Bottle", 1, {
+        bezier: slide5Bottle,
+        ease: Power1.easeInOut,
+        opacity: 1,
+    })
+);
+
+const slide5Scene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-4',
+    duration: 500,
+    triggerHook: 0,
+})
+.setTween(slide5Tween)
+.setPin('.timeline-section-4')
+.addTo(controller);
+
+const slide5Text = {
+    curviness: 1.25,
+    values: [
+        {x: 0, y: 0},
+        {x: -100, y: 100},
+    ]
+}
+const slide5TextTween = new TimelineLite();
+
+slide5TextTween.add(
+    TweenLite.to(".timeline-ph-container-2", 1, {
+        bezier: slide5Text,
+        ease: Power1.easeInOut,
+        opacity:1,
+    })
+);
+
+const slide5TextScene = new ScrollMagic.Scene({
+    triggerElement: '.timeline-section-4',
+    duration: 500,
+    triggerHook: 0,
+})
+.setTween(slide5TextTween)
 .addTo(controller);
