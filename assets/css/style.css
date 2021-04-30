@@ -1676,12 +1676,6 @@ a.navbar-brand.our_logo {
     text-align: justify;
     font-family: AgrandirRegular;
   }
-  .facts-wrapper {
-    margin-top: 870px;
-    height: 500px;
-    width: 100%;
-    position: absolute;
-  }
   .facts-details {
     margin-bottom: 25px;
     color: #bcd9d7;
@@ -2542,6 +2536,19 @@ a.navbar-brand.our_logo {
 .mobile-message {
   display: none;
 }
+.facts-number-container {
+  background-color: #000;
+  max-height: 50px;
+  min-width: 25px;
+  border-radius: 10px;
+  font-family: Agrandir;
+  font-size: 1.2rem;
+  color: #a8c1c0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
 @media only screen and (max-width: 899px) {
   .timeline-background {
     width: 100%;
@@ -2568,5 +2575,37 @@ a.navbar-brand.our_logo {
     text-align: left;
     line-height: 1;
     margin: 5vh;
+  }
+
+  .facts-number-container {
+    background-color: #000;
+    max-height: 50px;
+    min-width: 25px;
+    border-radius: 10px;
+    font-family: Agrandir;
+    font-size: 1.2rem;
+    color: #a8c1c0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .facts-number-container {
+    background-color: #000;
+    max-height: 50px;
+    min-width: 25px;
+    border-radius: 10px;
+    font-family: Agrandir;
+    font-size: 1.2rem;
+    color: #a8c1c0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 25%;
   }
 }
