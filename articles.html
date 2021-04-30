@@ -1017,11 +1017,12 @@
                   <h3 style="font-family: Agrandir; font-size: 1.6rem">Index</h3>
                   <div class="first-sidebar">
                     <!-- FILTERS -->
-                    <label for="all"><input class="radio" name="index" type="radio" id="all" onclick="filter('all','all')" checked />All</label
+                    <label for="all"
+                      ><input class="radio" name="index" type="radio" id="all" onclick="filter('all','all')" checked />All</label
                     ><br />
                     <label for="who"
                       ><input
-                      class="radio"
+                        class="radio"
                         name="index"
                         type="radio"
                         id="ccc"
@@ -1030,7 +1031,7 @@
                     ><br />
                     <label for="ccc"
                       ><input
-                      class="radio"
+                        class="radio"
                         name="index"
                         type="radio"
                         id="who"
@@ -1039,7 +1040,7 @@
                     ><br />
                     <label for="tnw"
                       ><input
-                      class="radio"
+                        class="radio"
                         name="index"
                         type="radio"
                         id="ng"
@@ -1048,7 +1049,7 @@
                     ><br />
                     <!-- SEARCH BAR -->
                     <div class="search-wrapper">
-                      <input type="text" id="search" placeholder="Search an Article">
+                      <input type="text" id="search" placeholder="Search an Article" />
                       <button type="submit" onclick="filter('all','all')"><i class="fa fa-search"></i></button>
                     </div>
                   </div>
@@ -1081,7 +1082,6 @@
                 /></a>
                 <p>Reach out to us anytime, anywhere through our social media accounts</p>
                 <br />
-                <p>REACH OUT!</p>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
                 <p>
@@ -1179,7 +1179,7 @@
         var checkBox = document.getElementById(checkboxID);
         var searchTerm = document.getElementById("search").value.toUpperCase();
 
-        if(checkboxID == "all") checkBox.checked = true;
+        if (checkboxID == "all") checkBox.checked = true;
 
         for (var i = 0; i < elements.length; i++) {
           if (checkBox.id == "all" && checkBox.checked) {
@@ -1192,7 +1192,11 @@
             elements[i].style.display = "none";
           }
 
-          if(elements[i].style.display == "block" && !elements[i].getElementsByClassName("article-title")[0].innerHTML.toUpperCase().includes(searchTerm)) elements[i].style.display = "none";
+          if (
+            elements[i].style.display == "block" &&
+            !elements[i].getElementsByClassName("article-title")[0].innerHTML.toUpperCase().includes(searchTerm)
+          )
+            elements[i].style.display = "none";
         }
       }
     </script>
