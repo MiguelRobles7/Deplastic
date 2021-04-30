@@ -93,16 +93,14 @@
           <div class="container">
             <div class="wow bounceInRight" data-wow-duration="3s">
               <div class="row">
-                <div class="col-sm-5 phone-remove"></div>
-                <div class="col-sm-1 phone-remove">
-                  <a href="articles.html"><img src="assets/images/QR.png" style="margin-left: 10px; width: 100%" /></a>
-                </div>
+                <div class="col-sm-6 phone-remove"></div>
                 <div class="col-md-6 details">
                   <div class="facts-header">
                     A few facts about plastic,<br />
                     <span>and why it is harmful.</span>
                   </div>
                   <div class="row col-sm-12">
+                    <div id="facts-numbering" class="col-sm-2 facts-number-container">01</div>
                     <p id="facts1" class="facts-details col-sm-12">
                       Since the 1950s, around 8.3 billion tons of plastic have been produced worldwide.
                       <br />
@@ -149,7 +147,38 @@
               <div class="row">
                 <div class="col-sm">
                   <img src="assets/images/Rectangle 40.png" style="width: 100%" />
-                  <img src="assets/images/Rectangle 39.png" style="width: 100%" />
+                  <div class="sources-container">
+                    <a href="https://www.biologicaldiversity.org/" target="_blank">
+                      <img
+                        class="sources-logo-square"
+                        src="assets/images/sources logos/center_for_biological_diversity_logo.png"
+                      />
+                    </a>
+                    <a href="https://www.condorferries.co.uk/help-info" target="_blank">
+                      <img class="sources-logo-rectangle" src="assets/images/sources logos/condor_ferries_logo.png" />
+                    </a>
+                    <a href="https://www.ecowatch.com/" target="_blank">
+                      <img class="sources-logo-rectangle" src="assets/images/sources logos/eco-watch-logo.jpg" />
+                    </a>
+                    <a href="https://www.nationalgeographic.com/" target="_blank">
+                      <img class="sources-logo-rectangle" src="assets/images/sources logos/national-geographic-logo.jpg" />
+                    </a>
+                    <a href="https://ourworldindata.org/" target="_blank">
+                      <img class="sources-logo-square" src="assets/images/sources logos/our_world_in_data_logo.png" />
+                    </a>
+                    <a href="https://plasticoceans.org/" target="_blank">
+                      <img class="sources-logo-rectangle" src="assets/images/sources logos/Plastic-Oceans_Logo.png" />
+                    </a>
+                    <a href="https://sloactive.com/" target="_blank">
+                      <img class="sources-logo-rectangle" src="assets/images/sources logos/Slo_Active_logo.png" />
+                    </a>
+                    <a href="https://www.who.int/" target="_blank">
+                      <img
+                        class="sources-logo-rectangle-alt"
+                        src="assets/images/sources logos/World_Health_Organization_logo.png"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -201,9 +230,6 @@
       <div class="scroll-group">
         <div class="container">
           <div class="row">
-            <img src="assets/images/Vector.svg" />
-          </div>
-          <div class="row">
             <a href="#section1">
               <img class="scroll-btn" id="sec1Btn" src="assets/images/Ellipse 8.svg" />
             </a>
@@ -250,7 +276,6 @@
                 /></a>
                 <p>Reach out to us anytime, anywhere through our social media accounts</p>
                 <br />
-                <p>REACH OUT!</p>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
                 <p>
@@ -340,11 +365,17 @@
       var counter = 0;
       var elem = document.getElementById("facts1");
       var inst = setInterval(change, 10000);
-
+      var elem2 = document.getElementById("facts-numbering");
       function change() {
         $("#facts1").fadeOut(500, function () {
           elem.innerHTML = text[counter];
         });
+
+        $("#facts-numbering").fadeOut(500, function () {
+          elem2.innerHTML = "0" + (counter + 1);
+        });
+
+        $("#facts-numbering").fadeIn(500);
         $("#facts1").fadeIn(500);
         counter++;
         if (counter >= text.length) {

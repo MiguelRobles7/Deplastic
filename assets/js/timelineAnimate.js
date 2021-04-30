@@ -50,16 +50,16 @@
 
 
         if ($(window).scrollTop() <= 11400 && $(window).scrollTop() > 10700) {
-            document.getElementById("awareness-text").innerHTML = "fight for the cause, consider <a href='donations.html'> donating here</a>";
+            document.getElementById("awareness-text").innerHTML = "Fight for the cause, consider <a href='donations.html'> donating here</a>";
         }
         else if ($(window).scrollTop() <= 10700 && $(window).scrollTop() > 10000) {
                 document.getElementById("awareness-text").innerHTML = "and there's nothing we can do, unless we work together";
         }
         else if ($(window).scrollTop() <= 10000 && $(window).scrollTop() > 9300) {
-                document.getElementById("awareness-text").innerHTML = "single-use plastic is a big reason why this is happening";
+                document.getElementById("awareness-text").innerHTML = "Single-use plastic is a big reason why this is happening";
         }
         else if ($(window).scrollTop() <= 9300 && $(window).scrollTop() > 8600) {
-                document.getElementById("awareness-text").innerHTML = "plastic is killing our planet"; 
+                document.getElementById("awareness-text").innerHTML = "Plastic is killing our planet"; 
                 $("#awareness-text").fadeIn();
         }
         else{

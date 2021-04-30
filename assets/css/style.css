@@ -1676,12 +1676,6 @@ a.navbar-brand.our_logo {
     text-align: justify;
     font-family: AgrandirRegular;
   }
-  .facts-wrapper {
-    margin-top: 870px;
-    height: 500px;
-    width: 100%;
-    position: absolute;
-  }
   .facts-details {
     margin-bottom: 25px;
     color: #bcd9d7;
@@ -1984,8 +1978,8 @@ a.navbar-brand.our_logo {
 .donations-link {
   background: -webkit-linear-gradient(#9187e9, #cb49f9);
   background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-main {
@@ -2066,6 +2060,64 @@ a.navbar-brand.our_logo {
   bottom: 0; right: 0; left: 0;
 }
 */
+
+.sources-container {
+  background: url(../images/Rectangle\ 39.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.sources-logo-square {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 20px;
+}
+.sources-logo-rectangle {
+  max-width: 300px;
+  max-height: 100px;
+  margin: 20px;
+}
+.sources-logo-rectangle-alt {
+  max-width: 300px;
+  max-height: 100px;
+  margin: 20px;
+  filter: contrast(100%);
+}
+@media only screen and (max-width: 430px) {
+  .sources-container {
+    background: url(../images/Rectangle\ 39.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 250px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .sources-logo-square {
+    max-width: 25px;
+    max-height: 25px;
+    margin: 10px;
+  }
+  .sources-logo-rectangle {
+    max-width: 75px;
+    max-height: 25px;
+    margin: 10px;
+  }
+  .sources-logo-rectangle-alt {
+    max-width: 75px;
+    max-height: 25px;
+    margin: 10px;
+    filter: contrast(100%);
+  }
+}
 @media only screen and (max-width: 1000px) {
   .donations-block {
     display: none;
@@ -2090,6 +2142,23 @@ a.navbar-brand.our_logo {
     margin: auto;
     width: 50%;
     padding: 0;
+  }
+
+  .sources-logo-square {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 20px;
+  }
+  .sources-logo-rectangle {
+    max-width: 150px;
+    max-height: 50px;
+    margin: 20px;
+  }
+  .sources-logo-rectangle-alt {
+    max-width: 150px;
+    max-height: 50px;
+    margin: 20px;
+    filter: contrast(100%);
   }
 }
 
@@ -2202,7 +2271,7 @@ a.navbar-brand.our_logo {
 .timeline-1 h1 {
   font-size: 2.5rem;
   color: #0d1115;
-  font-family: AgrandirRegular;
+  font-family: Agrandir;
   text-align: center;
 }
 .timeline-1 .container {
@@ -2295,6 +2364,9 @@ a.navbar-brand.our_logo {
   right: 0;
   top: 40%;
   display: none;
+}
+.timeline-text-five a {
+  color: #cb49f9;
 }
 .timeline-ph-container {
   width: 40%;
@@ -2467,6 +2539,19 @@ a.navbar-brand.our_logo {
 .mobile-message {
   display: none;
 }
+.facts-number-container {
+  background-color: #000;
+  max-height: 50px;
+  min-width: 25px;
+  border-radius: 10px;
+  font-family: Agrandir;
+  font-size: 1.2rem;
+  color: #a8c1c0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
 @media only screen and (max-width: 899px) {
   .timeline-background {
     width: 100%;
@@ -2493,5 +2578,37 @@ a.navbar-brand.our_logo {
     text-align: left;
     line-height: 1;
     margin: 5vh;
+  }
+
+  .facts-number-container {
+    background-color: #000;
+    max-height: 50px;
+    min-width: 25px;
+    border-radius: 10px;
+    font-family: Agrandir;
+    font-size: 1.2rem;
+    color: #a8c1c0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .facts-number-container {
+    background-color: #000;
+    max-height: 50px;
+    min-width: 25px;
+    border-radius: 10px;
+    font-family: Agrandir;
+    font-size: 1.2rem;
+    color: #a8c1c0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 25%;
   }
 }
