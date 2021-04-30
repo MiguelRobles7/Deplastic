@@ -2271,7 +2271,7 @@ a.navbar-brand.our_logo {
 .timeline-1 h1 {
   font-size: 2.5rem;
   color: #0d1115;
-  font-family: AgrandirRegular;
+  font-family: Agrandir;
   text-align: center;
 }
 .timeline-1 .container {
@@ -2364,6 +2364,9 @@ a.navbar-brand.our_logo {
   right: 0;
   top: 40%;
   display: none;
+}
+.timeline-text-five a {
+  color: #cb49f9;
 }
 .timeline-ph-container {
   width: 40%;
