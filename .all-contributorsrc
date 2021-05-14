@@ -6,6 +6,18 @@
   "commit": false,
   "contributors": [
     {
+    
+      "login": "ucelery",
+      "name": "Celery",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69152061?v=4",
+      "profile": "https://github.com/ucelery",
+      "contributions": [
+        "code",
+        "bug",
+        "review"
+        ]
+    },
+    {
       "login": "nvstco",
       "name": "V",
       "avatar_url": "https://avatars.githubusercontent.com/u/46194156?v=4",
