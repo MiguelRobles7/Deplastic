@@ -11,7 +11,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/69152061?v=4",
       "profile": "https://github.com/ucelery",
       "contributions": [
-        "code"
+        "code",
+        "bug",
+        "review"
       ]
     }
   ],
