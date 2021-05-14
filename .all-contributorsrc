@@ -15,6 +15,17 @@
         "ideas",
         "bug"
       ]
+    },
+    {
+      "login": "mkailaondoy",
+      "name": "Maria Kaila Ondoy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69746213?v=4",
+      "profile": "https://github.com/mkailaondoy",
+      "contributions": [
+        "code",
+        "content",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
