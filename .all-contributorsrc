@@ -70,6 +70,17 @@
         "review",
         "projectManagement"
       ]
+    },
+    {
+      "login": "IzakVillanueva",
+      "name": "IzakVillanueva",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82789169?v=4",
+      "profile": "https://github.com/IzakVillanueva",
+      "contributions": [
+        "code",
+        "bug",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
