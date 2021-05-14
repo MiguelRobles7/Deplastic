@@ -29,7 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/JamesBallatan"><img src="https://avatars.githubusercontent.com/u/74128476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JamesBallatan</b></sub></a><br /><a href="#ideas-JamesBallatan" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/JamesBallatan"><img src="https://avatars.githubusercontent.com/u/74128476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JamesBallatan</b></sub></a><br /><a href="#ideas-JamesBallatan" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-JamesBallatan" title="Design">🎨</a></td>
   </tr>
 </table>
 
