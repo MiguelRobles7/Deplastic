@@ -29,7 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/ucelery"><img src="https://avatars.githubusercontent.com/u/69152061?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Celery</b></sub></a><br /><a href="https://github.com/MiguelRobles7/Deplastic/commits?author=ucelery" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ucelery"><img src="https://avatars.githubusercontent.com/u/69152061?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Celery</b></sub></a><br /><a href="https://github.com/MiguelRobles7/Deplastic/commits?author=ucelery" title="Code">💻</a> <a href="https://github.com/MiguelRobles7/Deplastic/issues?q=author%3Aucelery" title="Bug reports">🐛</a> <a href="https://github.com/MiguelRobles7/Deplastic/pulls?q=is%3Apr+reviewed-by%3Aucelery" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
