@@ -6,7 +6,6 @@
   "commit": false,
   "contributors": [
     {
-    
       "login": "ucelery",
       "name": "Celery",
       "avatar_url": "https://avatars.githubusercontent.com/u/69152061?v=4",
@@ -15,7 +14,7 @@
         "code",
         "bug",
         "review"
-        ]
+      ]
     },
     {
       "login": "nvstco",
@@ -37,6 +36,16 @@
         "code",
         "content",
         "bug"
+      ]
+    },
+    {
+      "login": "KrimKofi",
+      "name": "KrimKofi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71881898?v=4",
+      "profile": "https://github.com/KrimKofi",
+      "contributions": [
+        "ideas",
+        "design"
       ]
     }
   ],
