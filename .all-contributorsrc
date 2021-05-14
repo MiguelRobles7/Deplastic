@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nvstco",
+      "name": "V",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46194156?v=4",
+      "profile": "http://nvstco.tumblr.com",
+      "contributions": [
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Deplastic",
+  "projectOwner": "MiguelRobles7",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
