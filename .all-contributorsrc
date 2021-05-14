@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "KrimKofi",
+      "name": "KrimKofi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71881898?v=4",
+      "profile": "https://github.com/KrimKofi",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Deplastic",
+  "projectOwner": "MiguelRobles7",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
