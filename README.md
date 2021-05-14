@@ -29,7 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://nvstco.tumblr.com"><img src="https://avatars.githubusercontent.com/u/46194156?v=4?s=100" width="100px;" alt=""/><br /><sub><b>V</b></sub></a><br /><a href="#design-nvstco" title="Design">🎨</a></td>
+    <td align="center"><a href="http://nvstco.tumblr.com"><img src="https://avatars.githubusercontent.com/u/46194156?v=4?s=100" width="100px;" alt=""/><br /><sub><b>V</b></sub></a><br /><a href="#design-nvstco" title="Design">🎨</a> <a href="#ideas-nvstco" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
