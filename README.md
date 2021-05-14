@@ -29,7 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KrimKofi"><img src="https://avatars.githubusercontent.com/u/71881898?v=4?s=100" width="100px;" alt=""/><br /><sub><b>KrimKofi</b></sub></a><br /><a href="#ideas-KrimKofi" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/KrimKofi"><img src="https://avatars.githubusercontent.com/u/71881898?v=4?s=100" width="100px;" alt=""/><br /><sub><b>KrimKofi</b></sub></a><br /><a href="#ideas-KrimKofi" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-KrimKofi" title="Design">🎨</a></td>
   </tr>
 </table>
 
