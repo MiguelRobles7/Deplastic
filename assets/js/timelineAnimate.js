@@ -9,7 +9,7 @@
  var onetime3 = false;
  jQuery(document).ready(function ($) { 
     $(window).scroll(function() {
-        var theta = $(window).scrollTop() / 500 % Math.PI;
+        var theta = $(window).scrollTop() / 500;
         var bottle = document.getElementById("bottle");
         bottle.style.transform=  "rotate("+theta+"rad)";
     });
